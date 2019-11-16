@@ -7,10 +7,10 @@
 	// About description
 
 	.about-description
-		&__text
+		&__bottom
 			&_2
-				margin-bottom: 400px
-
+				img
+					margin: 350px 0 200px
 
 @media (max-width: 1200px)
 
@@ -62,10 +62,15 @@
 	// About description
 
 	.about-description
-		&__text
+		&__image
 			&_2
-				margin-bottom: 100px
-
+				top: -100px
+		&__bottom
+			&_1
+				bottom: 60%
+			&_2
+				img
+					margin: 100px 0 200px
 
 
 @media (max-width: 992px)
@@ -136,10 +141,15 @@
 	// About description
 
 	.about-description
-		&__text
+		&__image
 			&_2
-				margin-bottom: 50px
-
+				top: -250px
+		&__bottom
+			&_1
+				bottom: 50%
+			&_2
+				img
+					margin: 0px 0 200px
 
 @media (max-width: 768px)
 
@@ -306,6 +316,7 @@
 	// description
 
 	.about-description
+		margin-bottom: 0
 		&__image
 			&_1
 				width: 80%
@@ -313,18 +324,20 @@
 				text-align: center
 				background: url(..//img/about/about-desc-1.jpg) 60% top / cover
 				top: 0
-				margin-top: 150px
+				margin: 150px 0
 				display: flex
 				align-items: flex-end
 				justify-content: flex-end
 				img
 					display: none
 			&_2
-				top: 350px
+				top: 100px
 				width: 80%
-				margin-bottom: 100px
+				margin: 50px 0
+
 		&__logo-letter
-			top: 100px
+			bottom: -30%
+			width: 75%
 			svg
 				width: 100%
 				margin-left: 35%
@@ -332,19 +345,25 @@
 			width: 100%
 			padding: 100px 15%
 			&_2
-				top: 0
+				margin-top: 0
 		&__bottom
 			flex-direction: column
+			position: static
 			&_1
-				width: 80%
+				width: 120%
 				position: static
+				margin-top: 100px
+				overflow: hidden
+				margin-left: -30%
 			&_2
 				width: 150%
 				overflow: hidden
-				top: 600px
 				position: relative
-				left: 175px
+				left: 20%
 				margin-bottom: 100px
+				top: 600px
 				img
 					position: relative
 					left: -15%
+					top: 0
+					margin: 0

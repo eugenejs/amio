@@ -42,30 +42,33 @@
          position: relative
          z-index: -1
    &__bottom
-      position: relative
       display: flex
       justify-content: flex-end
+      width: 100%
+      position: relative
       &_1
+         z-index: -1
          width: 60%
          position: absolute
          left: 0
-         bottom: 100%
-         z-index: -1
-      &_2
-         width: 50%
-         position: relative
-         top: 200px
+         bottom: 50%
          img
             width: 100%
+      &_2
+         width: 50%
+         img
+            width: 100%
+            position: relative
+            top: 600px
+            margin: 600px 0 200px
    &__logo-letter
-      position: relative
-      top: 200px
-      width: 60%
-      align-self: flex-end
-      text-align: center
+      position: absolute
+      bottom: -40%
+      width: 100%
       svg
+         position: relative
          width: 40%
-         margin-left: 25%
+         margin-left: 45%
    &__text
       width: 50%
       background: #171B1A
@@ -80,5 +83,4 @@
       &_2
          align-self: flex-end
          position: relative
-         top: -300px
-         margin-bottom: 800px
+         margin-top: -300px
