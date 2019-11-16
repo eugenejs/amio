@@ -724,7 +724,7 @@ ul {
       -ms-flex-item-align: end;
       align-self: flex-end;
       position: relative;
-      top: -250px;
+      top: -300px;
       margin-bottom: 800px; }
 
 @media (max-width: 1600px) {
