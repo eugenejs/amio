@@ -19,6 +19,60 @@
       font-family: "Freight"
       line-height: 1
       border-bottom: 1px solid black
-
    img
       width: 45%
+
+// About description
+
+.about-description
+   display: flex
+   flex-direction: column
+   position: relative
+   &__image
+      &_1
+         width: 100%
+         &-wrapper
+            width: 60%
+            align-self: flex-end
+            position: relative
+            top: 200px
+      &_2
+         width: 50%
+         align-self: center
+         position: relative
+         z-index: -1
+      &_3
+         width: 60%
+         position: absolute
+         left: 0
+         bottom: 100%
+         z-index: -1
+      &_4
+         width: 50%
+         position: relative
+         top: 200px
+         &-wrapper
+            position: relative
+            display: flex
+            justify-content: flex-end
+   &__logo-letter
+      width: 40%
+      position: absolute
+      bottom: -50%
+      right: 15%
+   &__text
+      width: 50%
+      background: #171B1A
+      color: #FFF
+      padding: 300px 14%
+      box-sizing: border-box
+      line-height: 2
+      p
+         font-size: 13px
+         text-align: justify
+         margin: 0
+      &_2
+         align-self: flex-end
+         position: relative
+         top: -250px
+         margin-bottom: 800px

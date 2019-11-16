@@ -46,6 +46,14 @@ h2 {
   font-weight: 400;
   line-height: 1.5; }
 
+h4 {
+  font-size: 10px;
+  font-family: 'Plain';
+  opacity: .1;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 2px; }
+
 ul {
   padding: 0;
   margin: 0; }
@@ -647,6 +655,75 @@ ul {
   .about-header img {
     width: 45%; }
 
+.about-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative; }
+  .about-description__image_1 {
+    width: 100%; }
+    .about-description__image_1-wrapper {
+      width: 60%;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      position: relative;
+      top: 200px; }
+  .about-description__image_2 {
+    width: 50%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    position: relative;
+    z-index: -1; }
+  .about-description__image_3 {
+    width: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    z-index: -1; }
+  .about-description__image_4 {
+    width: 50%;
+    position: relative;
+    top: 200px; }
+    .about-description__image_4-wrapper {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .about-description__logo-letter {
+    width: 40%;
+    position: absolute;
+    bottom: -50%;
+    right: 15%; }
+  .about-description__text {
+    width: 50%;
+    background: #171B1A;
+    color: #FFF;
+    padding: 300px 14%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 2; }
+    .about-description__text p {
+      font-size: 13px;
+      text-align: justify;
+      margin: 0; }
+    .about-description__text_2 {
+      -ms-flex-item-align: end;
+      align-self: flex-end;
+      position: relative;
+      top: -250px;
+      margin-bottom: 800px; }
+
+@media (max-width: 1600px) {
+  .about-description__text_2 {
+    margin-bottom: 400px; } }
+
 @media (max-width: 1200px) {
   .section-text {
     width: 33%; }
@@ -667,7 +744,9 @@ ul {
   .quote__pink-square {
     bottom: -150px; }
   .callback {
-    padding: 200px 20px; } }
+    padding: 200px 20px; }
+  .about-description__text_2 {
+    margin-bottom: 100px; } }
 
 @media (max-width: 992px) {
   .section-text {
@@ -693,7 +772,9 @@ ul {
   .callback {
     padding: 100px 20px; }
     .callback__form {
-      width: 50%; } }
+      width: 50%; }
+  .about-description__text_2 {
+    margin-bottom: 0px; } }
 
 @media (max-width: 768px) {
   .hamburger {
