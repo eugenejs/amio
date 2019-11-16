@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+	$("body").height($("#content").height())
+
 	// Menu
 
 		$( ".hamburger" ).click(function() {
@@ -115,7 +117,6 @@ $( document ).ready(function() {
 
 
 
-	$("body").height($("#content").height())
 	$(".promo-second__image").width($(".promo-first__image").width())
 
 
