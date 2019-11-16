@@ -2,12 +2,10 @@ $( document ).ready(function() {
 
 	// Menu
 
-		$( ".menu-mobile" ).hide();
 		$( ".hamburger" ).click(function() {
+			$('.menu-mobile').toggleClass('menu-mobile-visible');
 			$( ".hamburger" ).toggleClass("is-active");
-			$( ".menu-mobile" ).slideToggle();
-
-			if($(".hamburger").hasClass("is-active")){
+			if($(".menu-mobile").hasClass("menu-mobile-visible")){
 				$("#logo-svg").css({
 					"fill" : "#fff", "transition" : ".3s"
 				})
@@ -45,7 +43,7 @@ $( document ).ready(function() {
 	// owl-carousel
 
 		// init
-		
+
 			$(document).ready(function(){
 			  $('.owl-carousel').owlCarousel({
 				 items : 1,
@@ -161,8 +159,21 @@ $(window).resize(function(){
 		$('.menu').addClass("menu-mobile");
 		$('.menu').removeClass("menu");
 	}else{
+		$('.hamburger').removeClass('is-active');
 		$('.menu-mobile').addClass("menu");
 		$('.menu-mobile').removeClass("menu-mobile");
+		$('.menu').removeClass("menu-mobile-visible");
 	}
+
+	if($(".menu-mobile").hasClass("menu-mobile-visible")){
+		$("#logo-svg").css({
+			"fill" : "#fff", "transition" : ".3s"
+		})
+	}else{
+		$("#logo-svg").css({
+			"fill" : "#222", "transition" : ".3s"
+		})
+	};
+
 
 });
