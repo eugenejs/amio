@@ -622,12 +622,30 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .about-header__left {
-    background: #FFD8EC;
-    width: 50%; }
-  .about-header__right {
+  .about-header__item {
     width: 50%;
-    background: #7ABDD1; }
+    background: #7ABDD1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .about-header__item:first-child {
+      position: relative;
+      background: #FFD8EC; }
+  .about-header__text {
+    position: absolute;
+    right: -25px;
+    font-size: 108px;
+    font-family: "Freight";
+    line-height: 1;
+    border-bottom: 1px solid black; }
+  .about-header img {
+    width: 45%; }
 
 @media (max-width: 1200px) {
   .section-text {
