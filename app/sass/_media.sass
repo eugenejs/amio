@@ -138,7 +138,7 @@
 	.about-description
 		&__text
 			&_2
-				margin-bottom: 0px
+				margin-bottom: 50px
 
 
 @media (max-width: 768px)
@@ -302,3 +302,49 @@
 			left: auto
 		img
 			width: 70%
+
+	// description
+
+	.about-description
+		&__image
+			&_1
+				width: 80%
+				height: 100vh
+				text-align: center
+				background: url(..//img/about/about-desc-1.jpg) 60% top / cover
+				top: 0
+				margin-top: 150px
+				display: flex
+				align-items: flex-end
+				justify-content: flex-end
+				img
+					display: none
+			&_2
+				top: 350px
+				width: 80%
+				margin-bottom: 100px
+		&__logo-letter
+			top: 100px
+			svg
+				width: 100%
+				margin-left: 35%
+		&__text
+			width: 100%
+			padding: 100px 15%
+			&_2
+				top: 0
+		&__bottom
+			flex-direction: column
+			&_1
+				width: 80%
+				position: static
+			&_2
+				width: 150%
+				overflow: hidden
+				top: 600px
+				position: relative
+				left: 175px
+				margin-bottom: 100px
+				img
+					position: relative
+					left: -15%
