@@ -1,0 +1,150 @@
+@import '_mixins'
+@import '_font'
+
+// Main styles
+
+html
+	width: 100%
+
+body
+	position: relative
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.75
+	min-width: 320px
+	margin: 0
+	+font-text
+
+input, select, textarea, button
+	font-family: inherit
+
+h1,h2,h3,h4,h5,h6
+	margin: 0
+	+font-m
+	line-height: 1
+
+h1,h3
+	font-size: 50px
+
+h2
+	font-size: 40px
+	font-weight: 400
+	line-height: 1.5
+
+ul
+	padding: 0
+	margin: 0
+	li
+		list-style: none
+	a
+		text-decoration: none
+
+#content
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+
+.logo
+	position: fixed
+	width: 120px
+	z-index: 100
+	top: 50px
+	left: calc(50% - 60px)
+	transition: .5s
+
+// hamburger
+.hamburger
+	display: none
+	position: fixed
+	z-index: 100
+	top: 35px
+	left: 10px
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	width: 35px
+	height: 2px
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+	background-color: #fff
+// hamburger////
+
+// menu
+.menu
+	position: fixed
+	top: 25px
+	left: 45px
+	z-index: 100
+	transform-origin: bottom left
+	transform: rotate(90deg)
+	user-select: none
+	ul
+		display: flex
+		li
+			transform: rotate(180deg)
+			&:not(:last-child)
+				margin-right: 15px
+			a
+				color: #222
+				font-size: 10px
+				letter-spacing: 2px
+				text-transform: uppercase
+// menu////
+
+// mobile menu
+.menu-mobile
+	position: fixed
+	z-index: 50
+	width: 100%
+	height: 100vh
+	background: #171B1A
+	display: flex
+	align-items: center
+	display: none
+	ul
+		margin: 0 0 0 80px
+		li
+			&:first-child
+				padding-top: 100px
+			a
+				color: #FFF
+				+font-m
+				font-size: 45px
+				line-height: 1.3
+// mobile menu////
+
+// carousel
+.owl-nav
+	button
+		display: none
+// carousel////
+
+.section-text
+	font-size: 14px
+	text-align: justify
+	border-top: 1px solid black
+	padding-top: 25px
+	width: 33%
+	&_promo-first
+		position: absolute
+		bottom: 0
+		right: 0
+	&_promo-second
+		width: 33%
+
+.logo-letter
+	z-index: -2
+	width: 40%
+	&_black
+		position: absolute
+		top: 0
+		left: 0
+	&_pink
+		width: 60%
+		margin-top: 100px
+		&-wrapper
+			width: 67%
+			text-align: center
+
+
+
+@import '_sections'
+@import '_media'

@@ -1,0 +1,368 @@
+// Header
+
+.header
+	display: flex
+	height: 100vh
+	&__left
+		height: 100%
+		width: 50%
+		background: url(..//img/header-left.jpg) center / cover
+		position: relative
+	&__title
+		border-bottom: 1px solid #000
+		width: 75%
+		position: absolute
+		top: calc(50% - 30px)
+		right: -7%
+		z-index: 10
+		span
+			+font-text
+			font-weight: 300
+			font-size: 10px
+			text-transform: uppercase
+			position: absolute
+			right: 0
+			bottom: 15px
+	&__right
+		height: 100%
+		width: 50%
+		background:	$accent
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+		&_content
+			height: 50%
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			img
+				height: 100%
+			span
+				display: block
+				position: absolute
+				bottom: 12%
+				font-size: 8px
+				text-transform: uppercase
+				letter-spacing: 2px
+
+// Promo first
+
+.promo-first
+	padding: 220px 0
+	position: relative
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: center
+		max-width: 60%
+		height: 100%
+		margin: 0 auto
+		position: relative
+	&__image-wrapper
+		margin: 100px 0
+		width: 45%
+		overflow: hidden
+		img
+			width: 100%
+			position: relative
+			bottom: 40px
+	&__bg
+		width: 50%
+		position: absolute
+		top: 0
+		bottom: 0
+		background: url(..//img/promo-first-bg.png) no-repeat left bottom / 75% auto
+	&__pink-square
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 50%
+		height: 500px
+		background: $accent
+		z-index: -10
+
+// Chic
+
+.chic
+	overflow: hidden
+	width: 100%
+	position: relative
+	&__letter
+		position: absolute
+		top: 0
+		left: 0
+		&-bg
+			height: 100%
+			transform: translate(20%,0)
+	&__title
+		z-index: 10
+		position: absolute
+		top: 50%
+		width: 100%
+		text-align: center
+		letter-spacing: 12px
+		font-weight: 300
+		text-transform: uppercase
+		color: #fff
+	&__letter
+		width: 100%
+		height: 100%
+	img
+		width: 100%
+		margin-bottom: -70px
+
+// Promo second
+
+.promo-second
+	&__inner
+		padding: 250px 0
+		display: flex
+		max-width: 60%
+		margin: 0 auto
+	&__image-wrapper
+		position: absolute
+		right: 15%
+		img
+			width: 100%
+
+// Quote
+
+.quote
+	display: flex
+	flex-direction: row-reverse
+	align-items: center
+	position: relative
+	margin-bottom: 250px
+	&__bg
+		width: 90%
+		margin-right: 20%
+	&__pink-square
+		position: absolute
+		bottom: 0
+		left: 0
+		background: $accent
+		height: 80%
+		width: 50%
+		z-index: -10
+	.phrase
+		position: absolute
+		right: calc(20% - 150px)
+		top: calc(50% - 150px)
+		li
+			list-style: none
+			font-size: 65px
+			font-family: "Freight"
+			line-height: 1
+			display: flex
+			justify-content: center
+			align-items: center
+			span
+				display: block
+				width: 60px
+				height: 2px
+				background: #333
+				margin-right: 15px
+
+// Slider
+
+.slider
+	height: 100vh
+	display: flex
+	&__left
+		width: 50%
+		background: $accent
+		display: flex
+		justify-content: center
+		align-items: center
+		&_inner
+			width: 70%
+			height: 70%
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+	.owl-stage-outer
+		width: 99%
+
+	&__right
+		width: 50%
+
+.right-slider
+	width: 100%
+	height: 100%
+	position: relative
+	&__image
+		height: 100vh
+		transition: 1s
+		&_1
+			background: url(..//img/carousel/carousel-image-right-1.jpg) center / cover
+		&_2
+			background: url(..//img/carousel/carousel-image-right-2.jpg) center / cover
+		&_3
+			background: url(..//img/carousel/carousel-image-right-3.jpg) center / cover
+		&_4
+			background: url(..//img/carousel/carousel-image-right-4.jpg) center / cover
+.slider-counter
+	display: flex
+	justify-content: space-between
+	height: 20px
+	width: 100%
+	font-size: 10px
+	&__content
+		width: 20px
+
+.slider-nav
+	display: flex
+	justify-content: space-between
+	width: 100%
+	button
+		text-transform: uppercase
+		background: none
+		border: none
+		display: block
+		font-size: 14px
+		outline: none
+		cursor: pointer
+		position: relative
+		padding: 0
+		&:after
+			content: ''
+			display: block
+			width: 0
+			height: 1px
+			background: #000
+			transition: width .4s
+
+		&:hover::after
+			width: 100%
+	.prev-btn
+		&::after
+			position: absolute
+			right: 0
+
+// Instagram
+
+.instagram
+	height: 100vh
+	display: flex
+	&__left
+		height: 100%
+		width: 50%
+		background: url(..//img/seventh-secion-bg.jpg) center / cover
+	&__right
+		height: 100%
+		width: 50%
+		background: #171B1A
+		display: flex
+		align-items: center
+		justify-content: center
+		position: relative
+	&__instagram_photo
+		height: 40%
+	span
+		position: absolute
+		bottom: 13%
+		color: #fff
+		text-transform: uppercase
+		font-size: 10px
+		font-weight: 500
+		letter-spacing: 2px
+
+// Callback
+
+.callback
+	background: #fff
+	padding: 300px 20px
+	text-align: center
+	position: relative
+	&__form
+		width: 300px
+		font-size: 12px
+		padding: 25px 20px
+		border: 1px solid #E5E5E5
+		outline: none
+		&::placeholder
+			color: #171B1A
+	h3
+		margin: 0 auto
+		font-weight: 300
+		max-width: 700px
+		margin-bottom: 40px
+
+.form
+	display: flex
+	justify-content: center
+	button
+		text-transform: uppercase
+		padding: 0 25px
+		background: #fff
+		border: 1px solid #E5E5E5
+		color: #171B1A
+		outline: none
+		cursor: pointer
+
+.success
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	display: none
+	justify-content: center
+	align-items: center
+	span
+		text-transform: uppercase
+		color: #222
+		font-size: 20px
+	& ~ *
+		transition: all .5s ease
+	&.active
+		& ~ *
+			opacity: .5
+			filter: blur(10px)
+// Footer
+
+.footer
+	background: #171B1A
+	padding: 200px 150px
+	&__inner
+		margin: 0 auto
+		max-width: 1200px
+	&__top,&__bottom
+		display: flex
+		flex-direction: row-reverse
+		justify-content: space-between
+	&__bottom
+		margin-top: 35px
+		align-items: center
+	&__menu
+
+		font-weight: 500
+		line-height: 2
+		font-size: 10px
+		letter-spacing: 2px
+		text-transform: uppercase
+	&__logo
+		svg
+			width: 120px
+	&__contact
+		li
+			display: inline-block
+			margin-right: 12px
+			font-size: 18px
+	li
+		a
+			color: #fff
+			opacity: .2
+			transition: .2s
+			cursor: pointer
+			&:hover
+				opacity: 1
+	span
+		font-weight: 500
+		font-size: 9px
+		letter-spacing: 2px
+		text-transform: uppercase
+		color: #fff
+		opacity: .2
