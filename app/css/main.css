@@ -639,7 +639,7 @@ ul {
       background: #FFD8EC; }
   .about-header__text {
     position: absolute;
-    right: -25px;
+    left: 50%;
     font-size: 108px;
     font-family: "Freight";
     line-height: 1;
@@ -820,4 +820,12 @@ ul {
       text-align: center;
       margin-top: 30px; }
     .footer__contact {
-      margin-bottom: 100px; } }
+      margin-bottom: 100px; }
+  .about-header__item:first-child {
+    width: 100%; }
+  .about-header__item:last-child {
+    width: 0; }
+  .about-header__text {
+    left: auto; }
+  .about-header img {
+    width: 70%; } }
