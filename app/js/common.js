@@ -119,8 +119,26 @@ $( document ).ready(function() {
 
 	$(".promo-second__image").width($(".promo-first__image").width())
 
+	// Contact animated background
 
+		 var rowh = $('.contact-background__row').height() + 100
 
+		 $(window).resize(function(){
+			 $('.contact-background').stop();
+			rowh = $('.contact-background__row').height() + 100;
+			loop();
+		 })
+
+		 function loop() {
+
+        $('.contact-background').css({top: -rowh * 2});
+        $('.contact-background').animate ({
+            top:	- rowh * 6,
+        }, 100000, 'linear', function() {
+            loop();
+	        });
+	    }
+	    loop();
 });
 
 
@@ -175,6 +193,5 @@ $(window).resize(function(){
 			"fill" : "#222", "transition" : ".3s"
 		})
 	};
-
 
 });

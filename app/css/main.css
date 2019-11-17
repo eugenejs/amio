@@ -771,6 +771,72 @@ ul {
     position: relative;
     z-index: -1; }
 
+.contact-header {
+  height: 100vh;
+  overflow: hidden; }
+  .contact-header__contacts {
+    padding: 120px 0 150px;
+    width: 60%;
+    max-width: 900px;
+    background: #171B1A;
+    z-index: 1;
+    text-align: center; }
+    .contact-header__contacts-wrapper {
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .contact-header__contacts h4 {
+      color: #fff;
+      opacity: .2;
+      margin-bottom: 40px; }
+    .contact-header__contacts span, .contact-header__contacts a {
+      letter-spacing: 2px;
+      font-size: 10px;
+      font-family: "Plain";
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 2.5; }
+    .contact-header__contacts a {
+      text-decoration: none;
+      border-bottom: 1px solid white; }
+
+.contact-background {
+  position: relative; }
+  .contact-background-wrapper {
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    -webkit-transform-origin: top right;
+    transform-origin: top right; }
+  .contact-background__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 100px; }
+    .contact-background__row div {
+      min-width: 33%;
+      margin: 0 50px;
+      height: 0px;
+      padding-top: 50%; }
+  .contact-background__item_1 {
+    background: url(..//img/contact/content-bg-1.jpg) center/cover; }
+  .contact-background__item_2 {
+    background: url(..//img/contact/content-bg-2.jpg) center/cover; }
+  .contact-background__item_3 {
+    background: url(..//img/contact/content-bg-3.jpg) center/cover; }
+  .contact-background__item_4 {
+    background: url(..//img/contact/content-bg-4.jpg) center/cover; }
+
 @media (max-width: 1600px) {
   .about-description__bottom_2 img {
     margin: 350px 0 200px; }
@@ -839,7 +905,10 @@ ul {
   .about-description__bottom_2 img {
     margin: 0px 0 200px; }
   .about-designer {
-    margin-bottom: 300px; } }
+    margin-bottom: 300px; }
+  .contact-background__row div {
+    min-width: 66%;
+    padding-top: 100%; } }
 
 @media (max-width: 768px) {
   .hamburger {
@@ -1049,4 +1118,11 @@ ul {
   .about-designer__text_2 {
     width: 70%;
     padding: 0 15%;
-    bottom: -200px; } }
+    bottom: -200px; }
+  .contact-header__contacts {
+    width: 90%; }
+  .contact-header span, .contact-header a {
+    line-height: 1; }
+  .contact-header span {
+    display: block;
+    margin-bottom: 5px; } }
