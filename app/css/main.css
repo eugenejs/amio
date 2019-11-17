@@ -1033,4 +1033,20 @@ ul {
           position: relative;
           left: -15%;
           top: 0;
-          margin: 0; } }
+          margin: 0; }
+  .about-designer__author {
+    position: static;
+    width: 100%; }
+  .about-designer__content {
+    width: 100%; }
+  .about-designer__title {
+    margin: -40px 0 0 -30px;
+    padding: 0; }
+  .about-designer__text_1 {
+    width: 70%;
+    padding: 0 15%;
+    margin-right: -30px; }
+  .about-designer__text_2 {
+    width: 70%;
+    padding: 0 15%;
+    bottom: -200px; } }
