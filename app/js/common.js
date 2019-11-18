@@ -11,6 +11,19 @@ $( document ).ready(function() {
 				$("#logo-svg").css({
 					"fill" : "#fff", "transition" : ".3s"
 				})
+				$(".blog-logo").css({
+					"fill" : "#fff", "transition" : ".3s"
+				})
+				$('.logo').css({
+					"opacity" : "1", "visibility" : "visible"
+				})
+				$('.menu_white a').css({
+					"color" : "#fff", "transition" : ".3s"
+				})
+
+				$(".hamburger_white .hamburger-inner").css({
+					"background-color" : "#fff", "transition" : ".3s"
+				})
 			}else{
 				$("#logo-svg").css({
 					"fill" : "#222", "transition" : ".3s"
@@ -164,6 +177,38 @@ $( document ).ready(function() {
 		});
 	   }
 	   scrollPos = st;
+
+		if(st > $('.blog-header').height() && !$('.hamburger').hasClass('is-active')){
+
+				$(".blog-logo").css({
+					"fill" : "#222", "transition" : ".3s"
+				})
+
+				$(".menu_white a").css({
+					"color" : "#222", "transition" : ".3s"
+				})
+
+				$(".hamburger_white .hamburger-inner").css({
+					"background-color" : "#222", "transition" : ".3s"
+				})
+
+
+			}else{
+
+				$(".blog-logo").css({
+					"fill" : "#fff", "transition" : ".3s"
+				})
+
+				$(".menu_white a").css({
+					"color" : "#fff", "transition" : ".3s"
+				})
+
+				$(".hamburger_white .hamburger-inner").css({
+					"background-color" : "#fff", "transition" : ".3s"
+				})
+
+
+			};
 
 	});
 
