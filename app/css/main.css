@@ -911,6 +911,32 @@ ul {
     padding-top: 33.333%;
     background: url(..//img/blog/blog-welcome.jpg) center right/cover; }
 
+.press-header {
+  height: 100vh;
+  background: #171B1A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+  .press-header img {
+    width: 25%; }
+  .press-header span {
+    font-family: "Freight";
+    color: #fff;
+    font-size: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 100vh; }
+
 @media (max-width: 1600px) {
   .about-description__bottom_2 img {
     margin: 350px 0 200px; }
