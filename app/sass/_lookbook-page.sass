@@ -1,0 +1,86 @@
+// Header
+
+.lookbook-header
+    height: 100vh
+    background: $accent
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    &__title
+        border-bottom: 1px solid #000
+        position: absolute
+        width: 70%
+        top: 45%
+        left: 15%
+    &__download
+        position: absolute
+        top: 48%
+        right: 15%
+        +font-text
+        font-weight: 400
+        letter-spacing: 2px
+        font-size: 10px
+        text-transform: uppercase
+    img
+        width: 25%
+
+// Photos
+
+.lookbook-photos
+    height: 50%
+    margin-bottom: -650px
+    &__item
+        overflow: hidden
+        &_1
+            width: 60%
+            margin-left: auto
+            position: relative
+            z-index: 2
+
+            img
+                margin-top: -25px
+        &_2
+            width: 50%
+            padding-bottom: 50px
+            position: relative
+            z-index: 1
+            img
+                margin-top: -75px
+        &_3
+            width: 50%
+            margin: 0 auto
+            padding-bottom: 100px
+            margin-bottom: 300px
+            margin-top: -250px
+
+            img
+                margin-top: -200px
+        &_4
+            width: 50%
+            margin-left: auto
+            padding-bottom: 175px
+            position: relative
+            z-index: 1
+            img
+                margin-top: -150px
+        &_5
+            width: 60%
+            margin-top: -600px
+            padding-bottom: 175px
+
+            img
+                margin-top: -200px
+        &_6
+            width: 50%
+            margin-left:  auto
+            padding-bottom: 200px
+            margin-top: -25px
+            position: relative
+            z-index: 1
+            img
+                margin-top: -200px
+        img
+            width: 100%
+.no-move
+    transform: translate3d(0,0,0) !important

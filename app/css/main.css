@@ -978,6 +978,94 @@ ul {
   .press-selection .instyle {
     height: 25px; }
 
+.lookbook-header {
+  height: 100vh;
+  background: #FFD8EC;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .lookbook-header__title {
+    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 70%;
+    top: 45%;
+    left: 15%; }
+  .lookbook-header__download {
+    position: absolute;
+    top: 48%;
+    right: 15%;
+    font-family: "Plain";
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 10px;
+    text-transform: uppercase; }
+  .lookbook-header img {
+    width: 25%; }
+
+.lookbook-photos {
+  height: 50%;
+  margin-bottom: -650px; }
+  .lookbook-photos__item {
+    overflow: hidden; }
+    .lookbook-photos__item_1 {
+      width: 60%;
+      margin-left: auto;
+      position: relative;
+      z-index: 2; }
+      .lookbook-photos__item_1 img {
+        margin-top: -25px; }
+    .lookbook-photos__item_2 {
+      width: 50%;
+      padding-bottom: 50px;
+      position: relative;
+      z-index: 1; }
+      .lookbook-photos__item_2 img {
+        margin-top: -75px; }
+    .lookbook-photos__item_3 {
+      width: 50%;
+      margin: 0 auto;
+      padding-bottom: 100px;
+      margin-bottom: 300px;
+      margin-top: -250px; }
+      .lookbook-photos__item_3 img {
+        margin-top: -200px; }
+    .lookbook-photos__item_4 {
+      width: 50%;
+      margin-left: auto;
+      padding-bottom: 175px;
+      position: relative;
+      z-index: 1; }
+      .lookbook-photos__item_4 img {
+        margin-top: -150px; }
+    .lookbook-photos__item_5 {
+      width: 60%;
+      margin-top: -600px;
+      padding-bottom: 175px; }
+      .lookbook-photos__item_5 img {
+        margin-top: -200px; }
+    .lookbook-photos__item_6 {
+      width: 50%;
+      margin-left: auto;
+      padding-bottom: 200px;
+      margin-top: -25px;
+      position: relative;
+      z-index: 1; }
+      .lookbook-photos__item_6 img {
+        margin-top: -200px; }
+    .lookbook-photos__item img {
+      width: 100%; }
+
+.no-move {
+  -webkit-transform: translate3d(0, 0, 0) !important;
+  transform: translate3d(0, 0, 0) !important; }
+
 @media (max-width: 1600px) {
   .about-description__bottom_2 img {
     margin: 350px 0 200px; }
@@ -1300,4 +1388,18 @@ ul {
   .press-header span {
     font-size: 80px; }
   .press-selection {
-    margin: 100px 0 100px; } }
+    margin: 100px 0 100px; }
+  .lookbook-header__title {
+    width: auto;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+    left: auto;
+    line-height: 1; }
+  .lookbook-header__download {
+    bottom: 7%;
+    top: auto;
+    right: auto; }
+  .lookbook-header img {
+    width: auto;
+    height: 70%; } }
