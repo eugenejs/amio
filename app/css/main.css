@@ -79,6 +79,19 @@ ul {
   -webkit-transition: .5s;
   transition: .5s; }
 
+.btn {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: 'Plain';
+  font-weight: 500;
+  letter-spacing: 2px;
+  background: #fff;
+  padding: 20px 40px;
+  border: 1px solid #000; }
+  .btn_dark {
+    background: #171B1A;
+    color: #fff; }
+
 .hamburger {
   display: none;
   position: fixed;
@@ -880,17 +893,6 @@ ul {
     opacity: .65; }
   .article__text_dark {
     color: #b9b9b9; }
-
-.article__btn {
-  font-size: 10px;
-  text-transform: uppercase;
-  font-family: 'Plain';
-  font-weight: 500;
-  letter-spacing: 2px;
-  background: #fff;
-  border: none;
-  padding: 20px 40px;
-  border: 1px solid #000; }
 
 .blog-header {
   position: relative; }
