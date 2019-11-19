@@ -11,7 +11,7 @@ $( document ).ready(function() {
 				$("#logo-svg").css({
 					"fill" : "#fff", "transition" : ".3s"
 				})
-				$(".blog-logo").css({
+				$(".logo_white").css({
 					"fill" : "#fff", "transition" : ".3s"
 				})
 				$('.logo').css({
@@ -178,9 +178,9 @@ $( document ).ready(function() {
 	   }
 	   scrollPos = st;
 
-		if(st > $('.blog-header').height() && !$('.hamburger').hasClass('is-active')){
+		if(st > $('header').height() && !$('.hamburger').hasClass('is-active')){
 
-				$(".blog-logo").css({
+				$(".logo_white").css({
 					"fill" : "#222", "transition" : ".3s"
 				})
 
@@ -195,7 +195,7 @@ $( document ).ready(function() {
 
 			}else{
 
-				$(".blog-logo").css({
+				$(".logo_white").css({
 					"fill" : "#fff", "transition" : ".3s"
 				})
 
