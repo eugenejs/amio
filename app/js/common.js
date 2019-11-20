@@ -1,5 +1,39 @@
 $( document ).ready(function() {
 
+		setTimeout(() => {
+			$(".preloader__bg").animate({
+				"left" : "0"
+			},1000);
+
+			$('#logo-svg').css({
+				"fill" : "#222", "transition" : "2s"
+			});
+
+			$('.logo_white').css({
+				"fill" : "#222", "transition" : "2s"
+			});
+
+		}, 1000);
+
+
+		setTimeout(function() {
+			$(".logo").css({
+				"top" : "50px", "transition" : "1s"
+			})
+
+		  $('.preloader').addClass('preloader__hidden')
+
+		  $('#logo-svg').css({
+			"fill" : "#222", "transition" : ".4s"
+			});
+
+
+		$('.logo_white').css({
+			"fill" : "#fff", "transition" : "1s"
+		});
+		}, 3000);
+
+
 	$("body").height($("#content").height())
 
 	// Menu
@@ -163,9 +197,9 @@ $( document ).ready(function() {
 	$(window).scroll(function(){
 
 	   var st = $(this).scrollTop();
-	   if (st > scrollPos){
+	   if (st > scrollPos && $(".preloader").hasClass("preloader__hidden")){
 		   $('.logo').css({
-	 		  "opacity" : "0", "visibility" : "hidden"
+	 		  "opacity" : "0", "visibility" : "hidden", "transition" : ".4s"
 	 	  });
 	   }else{
 		   $('.logo').css({
@@ -179,7 +213,7 @@ $( document ).ready(function() {
 	   }
 	   scrollPos = st;
 
-		if(st > $('header').height() && !$('.hamburger').hasClass('is-active')){
+		if(st > $('header').height() && !$('.hamburger').hasClass('is-active') && $('.preloader').hasClass("preloader__hidden")){
 
 				$(".logo_white").css({
 					"fill" : "#222", "transition" : ".3s"
@@ -194,7 +228,7 @@ $( document ).ready(function() {
 				})
 
 
-			}else{
+			}else if($('.preloader').hasClass("preloader__hidden")){
 
 				$(".logo_white").css({
 					"fill" : "#fff", "transition" : ".3s"

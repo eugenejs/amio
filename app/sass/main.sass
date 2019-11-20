@@ -48,6 +48,27 @@ ul
 	a
 		text-decoration: none
 
+
+.preloader
+	position: fixed
+	z-index: 150
+	left: 0
+	right: 0
+	background: $gray
+	height: 100%
+	display: flex
+	align-items: center
+	&__bg
+		position: absolute
+		right: 0
+		left: 100%
+		top: 0
+		bottom: 0
+		background: $accent
+	&__hidden
+		opacity: 0
+		transition: 1s
+		visibility: hidden
 #content
 	position: fixed
 	top: 0
@@ -57,10 +78,13 @@ ul
 .logo
 	position: fixed
 	width: 120px
-	z-index: 100
-	top: 50px
+	z-index: 200
+	top: 50%
 	left: calc(50% - 60px)
 	transition: .5s
+	&_preloader
+		width: 90%
+		margin: 0 auto
 
 .btn
 	font-size: 10px
