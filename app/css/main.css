@@ -1170,7 +1170,25 @@ ul {
   .press-header img {
     width: 50%; }
   .press-header span {
-    font-size: 100px; } }
+    font-size: 100px; }
+  .lookbook-photos {
+    margin-bottom: -400px; }
+    .lookbook-photos__item_3 {
+      margin-bottom: 150px; }
+    .lookbook-photos__item_4 {
+      position: relative;
+      z-index: 1;
+      padding-bottom: 125px; }
+      .lookbook-photos__item_4 img {
+        margin-top: -100px; }
+    .lookbook-photos__item_5 {
+      width: 60%;
+      margin-top: -500px;
+      padding-bottom: 125px; }
+      .lookbook-photos__item_5 img {
+        margin-top: -150px; }
+    .lookbook-photos__item_6 {
+      padding-bottom: 150px; } }
 
 @media (max-width: 768px) {
   .hamburger {
@@ -1431,4 +1449,54 @@ ul {
     right: auto; }
   .lookbook-header img {
     width: auto;
-    height: 70%; } }
+    height: 70%; }
+  .lookbook-photos {
+    margin-bottom: -50px; }
+    .lookbook-photos__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .lookbook-photos__item_1 {
+        width: 85%;
+        margin-top: 100px; }
+        .lookbook-photos__item_1 img {
+          height: 800px;
+          width: auto; }
+      .lookbook-photos__item_2 {
+        width: 85%; }
+        .lookbook-photos__item_2 img {
+          height: 800px;
+          width: auto; }
+      .lookbook-photos__item_3 {
+        width: 80%;
+        margin-top: 0;
+        padding: 0;
+        margin-bottom: 75px; }
+        .lookbook-photos__item_3 img {
+          margin: 0;
+          height: 700px;
+          width: auto; }
+      .lookbook-photos__item_4 {
+        width: 90%;
+        margin: 0; }
+        .lookbook-photos__item_4 img {
+          margin: 0;
+          height: 700px;
+          width: auto; }
+      .lookbook-photos__item_5 {
+        width: 80%;
+        margin: -200px 0 0 auto;
+        padding: 0; }
+        .lookbook-photos__item_5 img {
+          margin: 0;
+          height: 700px;
+          width: auto;
+          padding: 0; }
+      .lookbook-photos__item_6 {
+        width: 100%;
+        margin-top: 50px; }
+        .lookbook-photos__item_6 img {
+          margin: 0; } }
