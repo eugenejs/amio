@@ -65,10 +65,11 @@ ul
 		top: 0
 		bottom: 0
 		background: $accent
-	&__hidden
-		opacity: 0
-		transition: 1s
-		visibility: hidden
+
+.hidden
+	opacity: 0
+	visibility: hidden
+	transition: .5s
 
 #content
 	position: fixed
@@ -76,16 +77,25 @@ ul
 	left: 0
 	right: 0
 
-.logo
+.logo-wrapper
 	position: fixed
 	width: 120px
 	z-index: 200
 	top: 50%
 	left: calc(50% - 60px)
 	transition: .5s
+	&_white
 	&_preloader
 		width: 90%
 		margin: 0 auto
+
+.fill
+	&-black
+		fill: #222222
+		transition: .3s
+	&-white
+		fill: #ffffff
+		transition: .3s
 
 .btn
 	font-size: 10px
@@ -131,6 +141,8 @@ ul
 	transform-origin: bottom left
 	transform: rotate(90deg)
 	user-select: none
+	&-visible
+		left: 0%
 	ul
 		display: flex
 		flex-direction: row-reverse
@@ -146,38 +158,8 @@ ul
 	&_white
 		a
 			color: #fff
+			transition: .4s
 // menu////
-
-// mobile menu
-.menu-mobile
-	position: fixed
-	left: -100%
-	z-index: 50
-	width: 100%
-	height: 100vh
-	background: #171B1A
-	display: flex
-	align-items: center
-	transition: .2s
-	&-visible
-		left: 0%
-	ul
-		margin: 0 0 0 80px
-		li
-			&:first-child
-				padding-top: 100px
-			a
-				color: #FFF
-				+font-m
-				font-size: 45px
-				line-height: 1.3
-// mobile menu////
-
-// carousel
-.owl-nav
-	button
-		display: none
-// carousel////
 
 .section-text
 	font-size: 14px
@@ -191,6 +173,7 @@ ul
 		right: 0
 	&_promo-second
 		width: 33%
+
 .logo-letter
 	z-index: -2
 	width: 40%
