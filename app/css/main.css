@@ -340,10 +340,6 @@ ul {
     position: absolute;
     top: 0;
     left: 0; }
-    .chic__letter-bg {
-      height: 100%;
-      -webkit-transform: translate(20%, 0);
-      transform: translate(20%, 0); }
   .chic__title {
     z-index: 10;
     position: absolute;
@@ -700,9 +696,9 @@ ul {
     position: absolute;
     left: 50%;
     font-size: 108px;
-    font-family: "Freight";
     line-height: 1;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    font-family: "Freight"; }
   .about-header img {
     width: 45%; }
 
@@ -802,8 +798,8 @@ ul {
       width: 400px;
       display: block;
       font-size: 108px;
-      font-family: "Freight";
-      line-height: 0.8; }
+      line-height: 0.8;
+      font-family: "Freight"; }
   .about-designer__text {
     font-size: 13px;
     font-family: "Plain";
@@ -1090,10 +1086,6 @@ ul {
         margin-top: -200px; }
     .lookbook-photos__item img {
       width: 100%; }
-
-.no-move {
-  -webkit-transform: translate3d(0, 0, 0) !important;
-  transform: translate3d(0, 0, 0) !important; }
 
 @media (max-width: 1600px) {
   .about-description__bottom_2 img {
@@ -1458,7 +1450,12 @@ ul {
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      -webkit-transform: translate3d(0, 0, 0) !important;
+      transform: translate3d(0, 0, 0) !important; }
+      .lookbook-photos__item img {
+        -webkit-transform: translate3d(0, 0, 0) !important;
+        transform: translate3d(0, 0, 0) !important; }
       .lookbook-photos__item_1 {
         width: 85%;
         margin-top: 100px; }
@@ -1466,33 +1463,38 @@ ul {
           height: 800px;
           width: auto; }
       .lookbook-photos__item_2 {
-        width: 85%; }
+        width: 85%;
+        margin-top: -50px;
+        padding: 0; }
         .lookbook-photos__item_2 img {
+          margin: 0;
           height: 800px;
-          width: auto; }
+          width: auto;
+          margin-right: auto; }
       .lookbook-photos__item_3 {
-        width: 80%;
-        margin-top: 0;
+        width: 100%;
+        margin-top: 50px;
         padding: 0;
         margin-bottom: 75px; }
         .lookbook-photos__item_3 img {
           margin: 0;
-          height: 700px;
+          height: 850px;
           width: auto; }
       .lookbook-photos__item_4 {
         width: 90%;
         margin: 0; }
         .lookbook-photos__item_4 img {
           margin: 0;
-          height: 700px;
-          width: auto; }
+          height: 850px;
+          width: auto;
+          margin-right: auto; }
       .lookbook-photos__item_5 {
         width: 80%;
         margin: -200px 0 0 auto;
         padding: 0; }
         .lookbook-photos__item_5 img {
           margin: 0;
-          height: 700px;
+          height: 750px;
           width: auto;
           padding: 0; }
       .lookbook-photos__item_6 {

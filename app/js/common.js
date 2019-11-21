@@ -68,7 +68,6 @@ $( document ).ready(function() {
 		if(window.matchMedia('(max-width: 768px)').matches){
 			$('.menu').addClass("menu-mobile");
 			$('.menu').removeClass("menu");
-			$('.lookbook-photos__item, .lookbook-photos__item img').addClass('no-move');
 		}
 
 
@@ -164,9 +163,6 @@ $( document ).ready(function() {
 		});
 
 
-
-	$(".promo-second__image").width($(".promo-first__image").width())
-
 	// Contact animated background
 
 		 var rowh = $('.contact-background__row').height() + 100
@@ -186,7 +182,11 @@ $( document ).ready(function() {
             loop();
 	        });
 	    }
-	    loop();
+		loop();
+
+
+		$(".promo-second__image").width($(".promo-first__image").width())
+
 });
 
 
@@ -257,7 +257,6 @@ $(window).resize(function(){
 	if(window.matchMedia('(max-width: 768px)').matches){
 		$('.menu').addClass("menu-mobile");
 		$('.menu').removeClass("menu");
-		$('.lookbook-photos__item, .lookbook-photos__item img').addClass('no-move');
 
 	}else{
 		$('.hamburger').removeClass('is-active');
@@ -265,7 +264,6 @@ $(window).resize(function(){
 		$('.menu-mobile').removeClass("menu-mobile");
 		$('.menu').removeClass("menu-mobile-visible");
 		$('.lookbook-photos__item, .lookbook-photos__item img').addClass('box');
-		$('.lookbook-photos__item, .lookbook-photos__item img').removeClass('no-move');
 	}
 
 	if($(".menu-mobile").hasClass("menu-mobile-visible")){
