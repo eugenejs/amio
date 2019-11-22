@@ -155,10 +155,12 @@ $( document ).ready(function() {
 			if($('.hamburger').hasClass('is-active')){
 
 				$('.menu').animate({'left' : '0'})
+				$('body').css({'overflow' : 'hidden'})
 
 			}else{
 
 				$('.menu').animate({'left' : '-100%'})
+				$('body').css({'overflow' : 'visible'})
 
 			}
 
@@ -220,10 +222,10 @@ $( document ).ready(function() {
 
 $(window).resize(function(){
 
-	if(window.matchMedia('(max-width: 768px)').matches)$('.menu').css({'left' : '-100%'})
+	if(window.matchMedia('(max-width: 768px)').matches){
+		$('.menu').css({'left' : '-100%'})}
 	setTimeout(() => {
-		if(window.matchMedia('(max-width: 768px)').matches){
-		}else{$('.menu').animate({'left' : '45px'})}
+		if(window.matchMedia('(max-width: 768px)').matches){}else{$('.menu').css({'left' : '45px'})}
 	}, 500);
 
 	$("body").height($("#content").height())

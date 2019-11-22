@@ -8,6 +8,8 @@ const uglify = require('gulp-uglifyjs');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const cssnano = require('gulp-cssnano');
+const imagemin = require('gulp-imagemin')
+const pngquant = require('imagemin-pngquant')
 
 
 // Sass compilation
@@ -119,6 +121,19 @@ const cssnano = require('gulp-cssnano');
       // pipe fontawesome
 
         gulp.task('fontawesome', gulp.parallel('fafont','facss'));
+
+    // Img
+
+        gulp.task('img', function() {
+            return gulp.src('app/img/**/*')
+            .pipe(imagemin({
+                interlaced: true,
+                progressive: true,
+                svgoPlugins: [{removeViewBox: false}],
+                use: [pngquant()]
+            }))
+            .pipe(gulp.dest('dist/img'))
+        });
 
 
 

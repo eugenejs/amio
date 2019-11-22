@@ -17,11 +17,13 @@
     "gulp-autoprefixer": "latest",
     "gulp-concat": "latest",
     "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.2.0",
     "gulp-npm-dist": "^1.0.3",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
-    "gulp-uglifyjs": "latest"
+    "gulp-uglifyjs": "latest",
+    "imagemin-pngquant": "^8.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
