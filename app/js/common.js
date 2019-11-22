@@ -62,16 +62,16 @@ $( document ).ready(function() {
 
 			$(".prev-btn").click(function(){
 				if( $(".slider-prev-btn").hasClass("prev-btn")){
+
 					slideNum--;
-					if(slideNum < 1){
-						slideNum = slideCount
-					}
+					if(slideNum < 1)slideNum = slideCount
 					$('.slider-counter__number').html("0" + slideNum)
 					$(".prev-btn").removeClass("prev-btn");
 					$(".next-btn").removeClass("next-btn");
 					setTimeout(function() {
 						$(".slider-prev-btn").addClass("prev-btn");
 						$(".slider-next-btn").addClass("next-btn");
+
 			    },1000);
 					$(".owl-prev").click()
 				}
@@ -103,8 +103,7 @@ $( document ).ready(function() {
 
 		 function loop() {
 
-        $('.contact-background').css({top: -rowh * 2});
-        $('.contact-background').animate ({
+        $('.contact-background').css({top: -rowh * 2}).animate ({
             top:	- rowh * 6,
         }, 100000, 'linear', function() {
             loop();
@@ -149,6 +148,7 @@ $( document ).ready(function() {
 			$(".logo_white").removeClass('fill-white')
 			$('.logo,.logo_white').removeClass('fill-black').toggleClass('fill-white')
 			$('.logo-wrapper').css({'visibility' : 'visible', 'opacity' : '1'})
+			$('.menu_white a').css({'color' : '#fff'})
 
 			if($('.hamburger').hasClass('is-active')){
 
@@ -158,6 +158,13 @@ $( document ).ready(function() {
 
 				$('.menu').animate({'left' : '-100%'})
 
+			}
+
+			if($(window).scrollTop() > $('header').height() && !$('.hamburger').hasClass('is-active')){
+
+				$('.logo_white').removeClass('fill-white').addClass('fill-black')
+				$(".hamburger_white .hamburger-inner").css({'background-color' : '#222', 'transition' : '.4s'})
+				$('.menu_white a').css({'color' : '#222'})
 			}
 
 		});
@@ -193,7 +200,7 @@ $( document ).ready(function() {
 			if(st > $('header').height()){
 
 				$('.logo_white').removeClass('fill-white').addClass('fill-black')
-				$(".hamburger_white .hamburger-inner").css({'background-color' : '#000', 'transition' : '.4s'})
+				$(".hamburger_white .hamburger-inner").css({'background-color' : '#222', 'transition' : '.4s'})
 				$('.menu_white a').css({'color' : '#222'})
 
 			}else{
@@ -214,7 +221,6 @@ $(window).resize(function(){
 
 	$("body").height($("#content").height())
 	$(".promo-second__image").width($(".promo-first__image").width())
-	$('.menu').removeClass('menu-visible');
-	$('.hamburger').removeClass('is-active');
+	if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
 
 });

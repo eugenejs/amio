@@ -216,8 +216,6 @@
 
 @media (max-width: 768px)
 
-	// HOME
-
 	// Main styles
 
 	.hamburger
@@ -281,6 +279,8 @@
 			top: 250px
 			&-wrapper
 				width: 0
+
+	// HOME
 
 	// Header
 
@@ -366,7 +366,6 @@
 				font-size: 50px
 				span
 
-
 	// Instagram
 
 	.instagram
@@ -415,7 +414,6 @@
 	// description
 
 	.about-description
-		margin-bottom: 0
 		&__image
 			&_1
 				width: 80%
@@ -459,7 +457,7 @@
 				overflow: hidden
 				position: relative
 				left: 20%
-				margin-bottom: 100px
+				margin-bottom: -100px
 				top: 600px
 				img
 					position: relative
@@ -480,9 +478,9 @@
 			padding: 0
 		&__text
 			&_1
-				width: 70%
+				width: 65%
 				padding: 0 15%
-				margin-right: -30px
+				margin-right: 0px
 			&_2
 				width: 70%
 				padding: 0 15%
@@ -623,3 +621,21 @@
 				margin-top: 50px
 				img
 					margin: 0
+
+@media (max-width: 568px)
+
+	// About
+
+	.about-designer
+		margin-bottom: 50px
+		&__image
+			position: absolute
+			top: 200px
+			right: 0
+		&__text
+			&_1
+				position: static
+				margin-left: 25px
+				width: 65%
+			&_2
+				position: static

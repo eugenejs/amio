@@ -109,6 +109,9 @@ ul {
     width: 90%;
     margin: 0 auto; }
 
+.logo {
+  fill: #222222; }
+
 .fill-black {
   fill: #222222;
   -webkit-transition: .3s;
@@ -143,7 +146,8 @@ ul {
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
   width: 35px;
-  height: 2px; }
+  height: 2px;
+  background-color: #222; }
 
 .hamburger-inner:after, .hamburger-inner:before {
   background-color: inherit; }
@@ -1345,65 +1349,63 @@ ul {
     left: auto; }
   .about-header img {
     width: 70%; }
-  .about-description {
-    margin-bottom: 0; }
-    .about-description__image_1 {
-      width: 80%;
-      height: 100vh;
-      text-align: center;
-      background: url(..//img/about/about-desc-1.jpg) 60% top/cover;
-      top: 0;
-      margin: 150px 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: flex-end;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-      .about-description__image_1 img {
-        display: none; }
-    .about-description__image_2 {
-      top: 100px;
-      width: 80%;
-      margin: 50px 0; }
-    .about-description__logo-letter {
-      bottom: -30%;
-      width: 75%; }
-      .about-description__logo-letter svg {
-        width: 100%;
-        margin-left: 35%; }
-    .about-description__text {
+  .about-description__image_1 {
+    width: 80%;
+    height: 100vh;
+    text-align: center;
+    background: url(..//img/about/about-desc-1.jpg) 60% top/cover;
+    top: 0;
+    margin: 150px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .about-description__image_1 img {
+      display: none; }
+  .about-description__image_2 {
+    top: 100px;
+    width: 80%;
+    margin: 50px 0; }
+  .about-description__logo-letter {
+    bottom: -30%;
+    width: 75%; }
+    .about-description__logo-letter svg {
       width: 100%;
-      padding: 100px 15%; }
-      .about-description__text_2 {
-        margin-top: 0; }
-    .about-description__bottom {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      position: static; }
-      .about-description__bottom_1 {
-        width: 120%;
-        position: static;
-        margin-top: 100px;
-        overflow: hidden;
-        margin-left: -30%; }
-      .about-description__bottom_2 {
-        width: 150%;
-        overflow: hidden;
+      margin-left: 35%; }
+  .about-description__text {
+    width: 100%;
+    padding: 100px 15%; }
+    .about-description__text_2 {
+      margin-top: 0; }
+  .about-description__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: static; }
+    .about-description__bottom_1 {
+      width: 120%;
+      position: static;
+      margin-top: 100px;
+      overflow: hidden;
+      margin-left: -30%; }
+    .about-description__bottom_2 {
+      width: 150%;
+      overflow: hidden;
+      position: relative;
+      left: 20%;
+      margin-bottom: -100px;
+      top: 600px; }
+      .about-description__bottom_2 img {
         position: relative;
-        left: 20%;
-        margin-bottom: 100px;
-        top: 600px; }
-        .about-description__bottom_2 img {
-          position: relative;
-          left: -15%;
-          top: 0;
-          margin: 0; }
+        left: -15%;
+        top: 0;
+        margin: 0; }
   .about-designer__author {
     position: static;
     width: 100%; }
@@ -1413,9 +1415,9 @@ ul {
     margin: -40px 0 0 -30px;
     padding: 0; }
   .about-designer__text_1 {
-    width: 70%;
+    width: 65%;
     padding: 0 15%;
-    margin-right: -30px; }
+    margin-right: 0px; }
   .about-designer__text_2 {
     width: 70%;
     padding: 0 15%;
@@ -1530,3 +1532,17 @@ ul {
         margin-top: 50px; }
         .lookbook-photos__item_6 img {
           margin: 0; } }
+
+@media (max-width: 568px) {
+  .about-designer {
+    margin-bottom: 50px; }
+    .about-designer__image {
+      position: absolute;
+      top: 200px;
+      right: 0; }
+    .about-designer__text_1 {
+      position: static;
+      margin-left: 25px;
+      width: 65%; }
+    .about-designer__text_2 {
+      position: static; } }
