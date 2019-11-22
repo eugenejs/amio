@@ -114,17 +114,19 @@ $( document ).ready(function() {
 
 	// Preloader
 
+		$('body').css({'overflow' : 'hidden'})
 		$(".logo, .logo_white").addClass('fill-white')
 
 		setTimeout(() => {
 
 			$(".preloader__bg").animate({"left" : "0"},1000);
+			$(window).scrollTop(0);
 
 			setTimeout(() => {
 
 				$(".logo, .logo_white").removeClass('fill-white').addClass('fill-black')
 
-			}, 600);
+			}, 400);
 
 		}, 1000);
 
@@ -134,10 +136,10 @@ $( document ).ready(function() {
 			$(".logo-wrapper").css({"top" : "50px"})
 			$('.logo_white').removeClass('fill-black').addClass('fill-white')
 			$('.preloader').addClass('hidden')
-			$(this).scrollTop(0);
+			$('body').css({'overflow' : 'visible'})
+			$('body').height($("#content").height())
 
 		}, 3000);
-
 
 	// Menu
 
@@ -172,7 +174,6 @@ $( document ).ready(function() {
 
 
 		$(".promo-second__image").width($(".promo-first__image").width())
-		$("body").height($("#content").height())
 
 });
 
