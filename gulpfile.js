@@ -122,19 +122,40 @@ const pngquant = require('imagemin-pngquant')
 
         gulp.task('fontawesome', gulp.parallel('fafont','facss'));
 
-    // Img
+    // build
 
-        gulp.task('img', function() {
-            return gulp.src('app/img/**/*')
-            .pipe(imagemin({
-                interlaced: true,
-                progressive: true,
-                svgoPlugins: [{removeViewBox: false}],
-                use: [pngquant()]
-            }))
-            .pipe(gulp.dest('dist/img'))
+        gulp.task('build-css',function(){
+            return gulp.src('app/css/**')
+            .pipe(gulp.dest('dist/css'))
         });
 
+        gulp.task('build-fonts',function(){
+            return gulp.src('app/fonts/**')
+            .pipe(gulp.dest('dist/fonts'))
+        });
+
+        gulp.task('build-js',function(){
+            return gulp.src('app/js/**')
+            .pipe(gulp.dest('dist/js'))
+        });
+
+        gulp.task('build-html',function(){
+            return gulp.src('app/*.html')
+            .pipe(gulp.dest('dist'))
+        });
+
+        // imagemin
+
+            gulp.task('img', function() {
+                return gulp.src('app/img/**/*')
+                .pipe(imagemin({
+                    interlaced: true,
+                    progressive: true,
+                    svgoPlugins: [{removeViewBox: false}],
+                    use: [pngquant()]
+                }))
+                .pipe(gulp.dest('dist/img'))
+            });
 
 
 
@@ -142,5 +163,5 @@ const pngquant = require('imagemin-pngquant')
 
 
 gulp.task('libsinit', gulp.series('libs','cssmin','jsmin','fontawesome'))
-
 gulp.task('watch', gulp.parallel('sass', 'browser-sync', 'watch'));
+gulp.task('build', gulp.parallel('build-css', 'build-fonts', 'build-js', 'build-html','img'));
