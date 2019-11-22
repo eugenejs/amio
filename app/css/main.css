@@ -168,8 +168,6 @@ ul {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .menu-visible {
-    left: 0%; }
   .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1199,8 +1197,6 @@ ul {
     align-items: center;
     -webkit-transition: 0s;
     transition: 0s; }
-    .menu-visible {
-      left: 0%; }
     .menu ul {
       display: block;
       margin: 0 0 0 80px; }

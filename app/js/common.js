@@ -219,6 +219,12 @@ $( document ).ready(function() {
 
 $(window).resize(function(){
 
+	if(window.matchMedia('(max-width: 768px)').matches)$('.menu').css({'left' : '-100%'})
+	setTimeout(() => {
+		if(window.matchMedia('(max-width: 768px)').matches){
+		}else{$('.menu').animate({'left' : '45px'})}
+	}, 500);
+
 	$("body").height($("#content").height())
 	$(".promo-second__image").width($(".promo-first__image").width())
 	if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
