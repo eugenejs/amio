@@ -103,8 +103,8 @@ $( document ).ready(function() {
 
 		 function loop() {
 
-        $('.contact-background').css({top: -rowh * 2}).animate ({
-            top:	- rowh * 6,
+        $('.contact-background').css({top: -rowh * 2}).animate({
+            top: - rowh * 6,
         }, 100000, 'linear', function() {
             loop();
 	        });
@@ -153,19 +153,14 @@ $( document ).ready(function() {
 			$('.menu_white a').css({'color' : '#fff'})
 
 			if($('.hamburger').hasClass('is-active')){
-
-				$('.menu').animate({'left' : '0'})
+				$('.menu').css({'left' : '0', 'transition' : '1s'})
 				$('body').css({'overflow' : 'hidden'})
-
 			}else{
-
-				$('.menu').animate({'left' : '-100%'})
+				$('.menu').css({'left' : '-100%', 'transition' : '1s'})
 				$('body').css({'overflow' : 'visible'})
-
 			}
 
 			if($(window).scrollTop() > $('header').height() && !$('.hamburger').hasClass('is-active')){
-
 				$('.logo_white').removeClass('fill-white').addClass('fill-black')
 				$(".hamburger_white .hamburger-inner").css({'background-color' : '#222', 'transition' : '.4s'})
 				$('.menu_white a').css({'color' : '#222'})
@@ -191,27 +186,19 @@ $( document ).ready(function() {
 			var st = $(this).scrollTop();
 
 			if(st > scrollPos){
-
 				$('.logo-wrapper').css({'visibility' : 'hidden', 'opacity' : '0'})
-
 			}else{
-
 				$('.logo-wrapper').css({'visibility' : 'visible', 'opacity' : '1'})
-
 			}
 
 			if(st > $('header').height()){
-
 				$('.logo_white').removeClass('fill-white').addClass('fill-black')
 				$(".hamburger_white .hamburger-inner").css({'background-color' : '#222', 'transition' : '.4s'})
 				$('.menu_white a').css({'color' : '#222'})
-
 			}else{
-
 				$('.logo_white').removeClass('fill-black').addClass('fill-white')
 				$('.hamburger_white .hamburger-inner').css({'background-color' : '#fff', 'transition' : '.4s'})
 				$('.menu_white a').css({'color' : '#fff'})
-
 			}
 
 			scrollPos = st;
@@ -223,10 +210,9 @@ $( document ).ready(function() {
 $(window).resize(function(){
 
 	if(window.matchMedia('(max-width: 768px)').matches){
-		$('.menu').css({'left' : '-100%'})}
-	setTimeout(() => {
-		if(window.matchMedia('(max-width: 768px)').matches){}else{$('.menu').css({'left' : '45px'})}
-	}, 500);
+		$('.menu').css({'left' : '-100%', 'transition' : '0s'})
+	}else{
+		$('.menu').css({'left' : '45px', 'transition' : '0s'})}
 
 	$("body").height($("#content").height())
 	$(".promo-second__image").width($(".promo-first__image").width())
