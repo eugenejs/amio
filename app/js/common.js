@@ -128,7 +128,7 @@ $( document ).ready(function() {
 
 			}, 400);
 
-		}, 1000);
+		}, 500);
 
 
 		setTimeout(function() {
@@ -139,7 +139,7 @@ $( document ).ready(function() {
 			$('body').css({'overflow' : 'visible'})
 			$('body').height($("#content").height())
 
-		}, 3000);
+		}, 1500);
 
 	// Menu
 
