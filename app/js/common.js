@@ -153,14 +153,16 @@ $( document ).ready(function() {
 			$('.menu_white a').css({'color' : '#fff'})
 
 			if($('.hamburger').hasClass('is-active')){
-				$('.menu').css({'left' : '0', 'transition' : '1s'})
+				$('.menu').css({'left' : '0', 'transition' : 'left 1s'})
 				$('body').css({'overflow' : 'hidden'})
 			}else{
-				$('.menu').css({'left' : '-100%', 'transition' : '1s'})
+				$('.menu').css({'left' : '-100%', 'transition' : 'left 1s'})
 				$('body').css({'overflow' : 'visible'})
+				if(window.matchMedia('(max-width: 768px)').matches){}else{
+					$('.menu').css({'left' : '45px', 'transition' : '0s'})}
 			}
 
-			if($(window).scrollTop() > $('header').height() && !$('.hamburger').hasClass('is-active')){
+			if($(window).scrollTop() > $(window).height() && !$('.hamburger').hasClass('is-active')){
 				$('.logo_white').removeClass('fill-white').addClass('fill-black')
 				$(".hamburger_white .hamburger-inner").css({'background-color' : '#222', 'transition' : '.4s'})
 				$('.menu_white a').css({'color' : '#222'})
@@ -191,7 +193,7 @@ $( document ).ready(function() {
 				$('.logo-wrapper').css({'visibility' : 'visible', 'opacity' : '1'})
 			}
 
-			if(st > $('header').height()){
+			if(st > $(window).height()){
 				$('.logo_white').removeClass('fill-white').addClass('fill-black')
 				$(".hamburger_white .hamburger-inner").css({'background-color' : '#222', 'transition' : '.4s'})
 				$('.menu_white a').css({'color' : '#222'})
