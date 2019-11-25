@@ -83,7 +83,7 @@ ul {
     left: 100%;
     top: 0;
     bottom: 0;
-    background: #FFD8EC; }
+    background: #7ABDD1; }
 
 .hidden {
   opacity: 0;
@@ -246,7 +246,7 @@ ul {
   .header__right {
     height: 100%;
     width: 50%;
-    background: #FFD8EC;
+    background: #7ABDD1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -316,7 +316,7 @@ ul {
     left: 0;
     width: 50%;
     height: 500px;
-    background: #FFD8EC;
+    background: #7ABDD1;
     z-index: -10; }
 
 .chic {
@@ -378,7 +378,7 @@ ul {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #FFD8EC;
+    background: #7ABDD1;
     height: 80%;
     width: 50%;
     z-index: -10; }
@@ -414,7 +414,7 @@ ul {
   display: flex; }
   .slider__left {
     width: 50%;
-    background: #FFD8EC;
+    background: #7ABDD1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -678,7 +678,7 @@ ul {
     justify-content: center; }
     .about-header__item:first-child {
       position: relative;
-      background: #FFD8EC; }
+      background: #7ABDD1; }
   .about-header__text {
     position: absolute;
     left: 50%;
@@ -992,7 +992,7 @@ ul {
 
 .lookbook-header {
   height: 100vh;
-  background: #FFD8EC;
+  background: #7ABDD1;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
