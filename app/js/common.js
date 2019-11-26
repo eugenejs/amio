@@ -114,8 +114,9 @@ $( document ).ready(function() {
 
 	// Preloader
 
-		$('body').css({'overflow' : 'hidden'})
 		$(".logo, .logo_white").addClass('fill-white')
+		$('body').css({'overflow' : 'hidden'})
+
 
 		setTimeout(() => {
 
@@ -135,10 +136,10 @@ $( document ).ready(function() {
 
 			$(".logo-wrapper").css({"top" : "50px"})
 			$('.logo_white').removeClass('fill-black').addClass('fill-white')
-			$('.logo_hidden').css({'opacity' : '0'})
 			$('.preloader').addClass('hidden')
 			$('body').css({'overflow' : 'visible'})
 			$('body').height($("#content").height())
+			$('.logo_hidden').css({'opacity' : '0'})
 
 		}, 1500);
 
@@ -156,9 +157,11 @@ $( document ).ready(function() {
 			if($('.hamburger').hasClass('is-active')){
 				$('.menu').css({'left' : '0', 'transition' : 'left 1s'})
 				$('body').css({'overflow' : 'hidden'})
+				$('.logo_hidden').css({'opacity' : '1', "transition" : '.3s'})
 			}else{
 				$('.menu').css({'left' : '-100%', 'transition' : 'left 1s'})
 				$('body').css({'overflow' : 'visible'})
+				$('.logo_hidden').css({'opacity' : '0', "transition" : '.3s'})
 				if(window.matchMedia('(max-width: 768px)').matches){}else{
 					$('.menu').css({'left' : '45px', 'transition' : '0s'})}
 			}
