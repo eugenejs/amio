@@ -135,6 +135,7 @@ $( document ).ready(function() {
 
 			$(".logo-wrapper").css({"top" : "50px"})
 			$('.logo_white').removeClass('fill-black').addClass('fill-white')
+			$('.logo_hidden').css({'opacity' : '0'})
 			$('.preloader').addClass('hidden')
 			$('body').css({'overflow' : 'visible'})
 			$('body').height($("#content").height())

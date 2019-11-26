@@ -349,7 +349,7 @@ ul {
     letter-spacing: 2px;
     text-transform: uppercase; }
   .footer__logo svg {
-    width: 120px; }
+    width: 90px; }
   .footer__contact li {
     display: inline-block;
     margin-right: 12px;
@@ -672,7 +672,6 @@ ul {
   display: flex; }
   .about-header__item {
     width: 50%;
-    background: #7ABDD1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -681,7 +680,8 @@ ul {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    color: #ffffff; }
     .about-header__item:first-child {
       position: relative;
       background: #1E1E24; }
@@ -690,7 +690,7 @@ ul {
     left: 50%;
     font-size: 108px;
     line-height: 1;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ffffff;
     font-family: "Freight"; }
   .about-header img {
     width: 45%; }
@@ -807,6 +807,7 @@ ul {
       width: 30%;
       max-height: 500px; }
   .about-designer__image {
+    opacity: .6;
     width: 75%;
     position: relative;
     z-index: -1; }
@@ -929,7 +930,7 @@ ul {
   .blog-welcome__img {
     width: 50%;
     padding-top: 33.333%;
-    background: url(..//img/blog/blog-welcome.jpg) center right/cover; }
+    background: url(..//img/blog/blog-welcome.jpg) center/cover; }
 
 .press-header {
   height: 100vh;
@@ -1010,7 +1011,8 @@ ul {
   -ms-flex-align: center;
   align-items: center; }
   .lookbook-header__title {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
+    color: #ffffff;
     position: absolute;
     width: 70%;
     top: 45%;
@@ -1029,7 +1031,7 @@ ul {
 
 .lookbook-photos {
   height: 50%;
-  margin-bottom: -650px; }
+  margin-bottom: -850px; }
   .lookbook-photos__item {
     overflow: hidden; }
     .lookbook-photos__item_1 {
@@ -1050,7 +1052,7 @@ ul {
       width: 50%;
       margin: 0 auto;
       padding-bottom: 100px;
-      margin-bottom: 300px;
+      margin-bottom: 100px;
       margin-top: -250px; }
       .lookbook-photos__item_3 img {
         margin-top: -200px; }
@@ -1064,15 +1066,15 @@ ul {
         margin-top: -150px; }
     .lookbook-photos__item_5 {
       width: 60%;
-      margin-top: -600px;
+      margin-top: -300px;
       padding-bottom: 175px; }
       .lookbook-photos__item_5 img {
         margin-top: -200px; }
     .lookbook-photos__item_6 {
       width: 50%;
       margin-left: auto;
-      padding-bottom: 200px;
-      margin-top: -25px;
+      padding-bottom: 300px;
+      margin-top: -100px;
       position: relative;
       z-index: 1; }
       .lookbook-photos__item_6 img {
