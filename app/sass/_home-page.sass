@@ -6,15 +6,16 @@
 	&__left
 		height: 100%
 		width: 50%
-		background: url(..//img/home/header-left.jpg) center / cover
+		background: url(..//img/home/header-left.jpg) top / cover
 		position: relative
 	&__title
-		border-bottom: 1px solid #000
+		border-bottom: 1px solid #fff
 		width: 75%
 		position: absolute
 		top: calc(50% - 30px)
 		right: -7%
 		z-index: 10
+		color: #ffffff
 		span
 			+font-text
 			font-weight: 300
@@ -39,6 +40,7 @@
 			img
 				height: 100%
 			span
+				color: #ffffff
 				display: block
 				position: absolute
 				bottom: 12%
@@ -78,7 +80,7 @@
 		bottom: 0
 		left: 0
 		width: 50%
-		height: 500px
+		height: 550px
 		background: $accent
 		z-index: -10
 
@@ -138,7 +140,7 @@
 		position: absolute
 		bottom: 0
 		left: 0
-		background: $accent
+		background: #F3F4F5
 		height: 80%
 		width: 50%
 		z-index: -10
@@ -166,12 +168,14 @@
 .slider
 	height: 100vh
 	display: flex
+	background: $accent
+	color: #ffffff
 	&__left
 		width: 50%
-		background: $accent
 		display: flex
 		justify-content: center
 		align-items: center
+
 		&_inner
 			width: 70%
 			height: 70%
@@ -180,7 +184,7 @@
 			align-items: center
 			justify-content: space-between
 	.owl-stage-outer
-		width: 99%
+		width: 100%
 
 	&__right
 		width: 50%
@@ -195,11 +199,11 @@
 		&_1
 			background: url(..//img/carousel/carousel-image-right-1.jpg) center / cover
 		&_2
-			background: url(..//img/carousel/carousel-image-right-2.jpg) center / cover
+			background: url(..//img/carousel/carousel-image-right-2.jpg) top / cover
 		&_3
-			background: url(..//img/carousel/carousel-image-right-3.jpg) center / cover
+			background: url(..//img/carousel/carousel-image-right-3.jpg) top / cover
 		&_4
-			background: url(..//img/carousel/carousel-image-right-4.jpg) center / cover
+			background: url(..//img/carousel/carousel-image-right-4.jpg) top / cover
 .slider-counter
 	display: flex
 	justify-content: space-between
@@ -213,6 +217,7 @@
 	display: flex
 	justify-content: space-between
 	width: 100%
+
 	button
 		text-transform: uppercase
 		background: none
@@ -223,12 +228,13 @@
 		cursor: pointer
 		position: relative
 		padding: 0
+		color: #ffffff
 		&:after
 			content: ''
 			display: block
 			width: 0
 			height: 1px
-			background: #000
+			background: #fff
 			transition: width .4s
 
 		&:hover::after
@@ -246,7 +252,7 @@
 	&__left
 		height: 100%
 		width: 50%
-		background: url(..//img/home/seventh-secion-bg.jpg) center / cover
+		background: url(..//img/seventh-secion-bg.jpg) top / cover
 	&__right
 		height: 100%
 		width: 50%

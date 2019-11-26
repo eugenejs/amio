@@ -83,7 +83,7 @@ ul {
     left: 100%;
     top: 0;
     bottom: 0;
-    background: #7ABDD1; }
+    background: #fafafa; }
 
 .hidden {
   opacity: 0;
@@ -99,10 +99,10 @@ ul {
 
 .logo-wrapper {
   position: fixed;
-  width: 120px;
+  width: 90px;
   z-index: 200;
   top: 50%;
-  left: calc(50% - 60px);
+  left: calc(50% - 45px);
   -webkit-transition: .5s;
   transition: .5s; }
   .logo-wrapper_preloader {
@@ -113,7 +113,7 @@ ul {
   fill: #222222; }
 
 .fill-black {
-  fill: #222222;
+  fill: #1E1E24;
   -webkit-transition: .3s;
   transition: .3s; }
 
@@ -147,7 +147,7 @@ ul {
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
   width: 35px;
   height: 2px;
-  background-color: #222; }
+  background-color: #1E1E24; }
 
 .hamburger-inner:after, .hamburger-inner:before {
   background-color: inherit; }
@@ -226,15 +226,16 @@ ul {
   .header__left {
     height: 100%;
     width: 50%;
-    background: url(..//img/home/header-left.jpg) center/cover;
+    background: url(..//img/home/header-left.jpg) top/cover;
     position: relative; }
   .header__title {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     width: 75%;
     position: absolute;
     top: calc(50% - 30px);
     right: -7%;
-    z-index: 10; }
+    z-index: 10;
+    color: #ffffff; }
     .header__title span {
       font-family: "Plain";
       font-weight: 300;
@@ -246,7 +247,7 @@ ul {
   .header__right {
     height: 100%;
     width: 50%;
-    background: #7ABDD1;
+    background: #1E1E24;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -272,6 +273,7 @@ ul {
       .header__right_content img {
         height: 100%; }
       .header__right_content span {
+        color: #ffffff;
         display: block;
         position: absolute;
         bottom: 12%;
@@ -315,8 +317,8 @@ ul {
     bottom: 0;
     left: 0;
     width: 50%;
-    height: 500px;
-    background: #7ABDD1;
+    height: 550px;
+    background: #1E1E24;
     z-index: -10; }
 
 .chic {
@@ -378,7 +380,7 @@ ul {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #7ABDD1;
+    background: #F3F4F5;
     height: 80%;
     width: 50%;
     z-index: -10; }
@@ -411,10 +413,11 @@ ul {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  background: #1E1E24;
+  color: #ffffff; }
   .slider__left {
     width: 50%;
-    background: #7ABDD1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -441,7 +444,7 @@ ul {
       -ms-flex-pack: justify;
       justify-content: space-between; }
   .slider .owl-stage-outer {
-    width: 99%; }
+    width: 100%; }
   .slider__right {
     width: 50%; }
 
@@ -456,11 +459,11 @@ ul {
     .right-slider__image_1 {
       background: url(..//img/carousel/carousel-image-right-1.jpg) center/cover; }
     .right-slider__image_2 {
-      background: url(..//img/carousel/carousel-image-right-2.jpg) center/cover; }
+      background: url(..//img/carousel/carousel-image-right-2.jpg) top/cover; }
     .right-slider__image_3 {
-      background: url(..//img/carousel/carousel-image-right-3.jpg) center/cover; }
+      background: url(..//img/carousel/carousel-image-right-3.jpg) top/cover; }
     .right-slider__image_4 {
-      background: url(..//img/carousel/carousel-image-right-4.jpg) center/cover; }
+      background: url(..//img/carousel/carousel-image-right-4.jpg) top/cover; }
 
 .slider-counter {
   display: -webkit-box;
@@ -492,13 +495,14 @@ ul {
     outline: none;
     cursor: pointer;
     position: relative;
-    padding: 0; }
+    padding: 0;
+    color: #ffffff; }
     .slider-nav button:after {
       content: '';
       display: block;
       width: 0;
       height: 1px;
-      background: #000;
+      background: #fff;
       -webkit-transition: width .4s;
       transition: width .4s; }
     .slider-nav button:hover::after {
@@ -515,7 +519,7 @@ ul {
   .instagram__left {
     height: 100%;
     width: 50%;
-    background: url(..//img/home/seventh-secion-bg.jpg) center/cover; }
+    background: url(..//img/seventh-secion-bg.jpg) top/cover; }
   .instagram__right {
     height: 100%;
     width: 50%;
@@ -678,7 +682,7 @@ ul {
     justify-content: center; }
     .about-header__item:first-child {
       position: relative;
-      background: #7ABDD1; }
+      background: #1E1E24; }
   .about-header__text {
     position: absolute;
     left: 50%;
@@ -992,7 +996,7 @@ ul {
 
 .lookbook-header {
   height: 100vh;
-  background: #7ABDD1;
+  background: #1E1E24;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
