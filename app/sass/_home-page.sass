@@ -75,12 +75,12 @@
 		top: 0
 		bottom: 0
 		background: url(..//img/home/promo-first-bg.png) no-repeat left bottom / 75% auto
-	&__pink-square
+	&__square
 		position: absolute
 		bottom: 0
 		left: 0
 		width: 50%
-		height: 550px
+		height: 450px
 		background: $accent
 		z-index: -10
 
@@ -108,6 +108,8 @@
 		width: 100%
 		height: 100%
 	img
+		position: relative
+		top: 50px
 		width: 100%
 		margin-bottom: -70px
 
@@ -243,129 +245,3 @@
 		&::after
 			position: absolute
 			right: 0
-
-// Instagram
-
-.instagram
-	height: 100vh
-	display: flex
-	&__left
-		height: 100%
-		width: 50%
-		background: url(..//img/seventh-secion-bg.jpg) top / cover
-	&__right
-		height: 100%
-		width: 50%
-		background: #171B1A
-		display: flex
-		align-items: center
-		justify-content: center
-		position: relative
-	&__instagram_photo
-		height: 40%
-	span
-		position: absolute
-		bottom: 13%
-		color: #fff
-		text-transform: uppercase
-		font-size: 10px
-		font-weight: 500
-		letter-spacing: 2px
-
-// Callback
-
-.callback
-	background: #fff
-	padding: 300px 20px
-	text-align: center
-	position: relative
-	&__form
-		width: 300px
-		font-size: 12px
-		padding: 25px 20px
-		border: 1px solid #E5E5E5
-		outline: none
-		&::placeholder
-			color: #171B1A
-	h3
-		margin: 0 auto
-		font-weight: 300
-		max-width: 700px
-		margin-bottom: 40px
-
-.form
-	display: flex
-	justify-content: center
-	button
-		text-transform: uppercase
-		padding: 0 25px
-		background: #fff
-		border: 1px solid #E5E5E5
-		color: #171B1A
-		outline: none
-		cursor: pointer
-
-.success
-	position: absolute
-	top: 0
-	bottom: 0
-	left: 0
-	right: 0
-	display: none
-	justify-content: center
-	align-items: center
-	span
-		text-transform: uppercase
-		color: #222
-		font-size: 20px
-	& ~ *
-		transition: all .5s ease
-	&.active
-		& ~ *
-			opacity: .5
-			filter: blur(10px)
-// Footer
-
-.footer
-	background: #171B1A
-	padding: 200px 150px
-	&__inner
-		margin: 0 auto
-		max-width: 1200px
-	&__top,&__bottom
-		display: flex
-		flex-direction: row-reverse
-		justify-content: space-between
-	&__bottom
-		margin-top: 35px
-		align-items: center
-	&__menu
-
-		font-weight: 500
-		line-height: 2
-		font-size: 10px
-		letter-spacing: 2px
-		text-transform: uppercase
-	&__logo
-		svg
-			width: 120px
-	&__contact
-		li
-			display: inline-block
-			margin-right: 12px
-			font-size: 18px
-	li
-		a
-			color: #fff
-			opacity: .2
-			transition: .2s
-			cursor: pointer
-			&:hover
-				opacity: 1
-	span
-		font-weight: 500
-		font-size: 9px
-		letter-spacing: 2px
-		text-transform: uppercase
-		color: #fff
-		opacity: .2
