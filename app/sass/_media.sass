@@ -1,7 +1,5 @@
 @media (max-width: 1600px)
 
-	// HOME
-
 	// ABOUT
 
 	// About description
@@ -36,7 +34,7 @@
 			max-width: 70%
 		&__image-wrapper
 			margin: 50px 0
-		&__pink-square
+		&__square
 			height: 300px
 
 	// Chic
@@ -51,13 +49,13 @@
 	.promo-second
 		&__inner
 			max-width: 80%
-		&__image-wrapper
 
 	// Slider
 
 	.quote
-		&__pink-square
+		&__square
 			bottom: -150px
+
 	// Callback
 
 	.callback
@@ -84,6 +82,17 @@
 		&__title
 			margin-bottom: 0px
 
+	// Lookbook
+
+	// Photos
+
+	.lookbook-photos
+		&__item
+			&_3
+				margin-top: -100px
+				img
+					margin-top: -150px
+
 @media (max-width: 992px)
 
 	// Main styles
@@ -91,25 +100,13 @@
 	.section-text
 		width: 50%
 
-	.logo-letter
-		z-index: -1
-
-
 	// Header
 
 	.header
 		&__title
-
 			margin-right: 0
 			&_right
 				margin-right: 30px
-
-	.logo-letter
-		&_pink
-
-	// Promo first
-
-
 
 	// Chic
 
@@ -129,16 +126,13 @@
 
 	.quote
 		margin-bottom: 200px
-		&__pink-square
+		&__square
 			bottom: -250px
-		.phrase
-
 
 	// Slider
 
 	.slider
 		display: none
-
 
 	// Callback
 
@@ -154,7 +148,7 @@
 	.about-description
 		&__image
 			&_2
-				top: -250px
+				top: -150px
 		&__bottom
 			&_1
 				bottom: 50%
@@ -166,7 +160,6 @@
 
 	.about-designer
 		margin-bottom: 300px
-
 
 	// Contact
 
@@ -257,7 +250,6 @@
 			a
 				color: #fff
 
-
 	.section-text
 		position: static
 		width: 100%
@@ -272,7 +264,7 @@
 		position: absolute
 		top: 50px
 		left: -100px
-		&_pink
+		&_second
 			top: 250px
 			&-wrapper
 				width: 0
@@ -321,7 +313,7 @@
 		img
 			width: auto
 			height: 100vh
-			top: 50px
+			top: 150px
 		&__letter
 			display: none
 			height: 100%
@@ -338,7 +330,7 @@
 			text-align: center
 			position: relative
 			right: 0
-			top: 150px
+			top: 100px
 			margin: auto
 			margin-bottom: 200px
 
@@ -351,7 +343,7 @@
 		background: url(..//img/home/quote-bg.png) center / auto 100%
 		&__bg
 			display: none
-		&__pink-square
+		&__square
 			height: 100%
 		.phrase
 			margin: 300px 0
@@ -376,7 +368,6 @@
 	// Footer
 
 	.footer
-		background: #171B1A
 		padding: 100px 50px 50px
 		&__top,&__bottom
 			flex-direction: column
@@ -422,7 +413,7 @@
 				img
 					display: none
 			&_2
-				top: 100px
+				top: 50px
 				width: 80%
 				margin: 50px 0
 
@@ -455,7 +446,7 @@
 				top: 600px
 				img
 					position: relative
-					left: -15%
+					right: 35%
 					top: 0
 					margin: 0
 
@@ -530,7 +521,7 @@
 
 	.press-header
 		img
-			width: 80%
+			width: 75%
 		span
 			font-size: 80px
 	// Press selection
@@ -635,3 +626,18 @@
 				width: 65%
 			&_2
 				position: static
+
+	// Description
+
+	.about-description
+		&__image
+			&_2
+				top: 0px
+
+	// Blog
+
+	// Header
+
+	.blog-header
+		&__img
+			background: url(..//img/blog/blog-bg.jpg) 60% top / cover

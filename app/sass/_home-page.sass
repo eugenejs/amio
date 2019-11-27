@@ -69,12 +69,6 @@
 			width: 100%
 			position: relative
 			bottom: 40px
-	&__bg
-		width: 50%
-		position: absolute
-		top: 0
-		bottom: 0
-		background: url(..//img/home/promo-first-bg.png) no-repeat left bottom / 75% auto
 	&__square
 		position: absolute
 		bottom: 0
@@ -91,6 +85,8 @@
 	width: 100%
 	position: relative
 	&__letter
+		width: 100%
+		height: 100%
 		position: absolute
 		top: 0
 		left: 0
@@ -104,9 +100,6 @@
 		font-weight: 300
 		text-transform: uppercase
 		color: #fff
-	&__letter
-		width: 100%
-		height: 100%
 	img
 		position: relative
 		top: 50px
@@ -138,7 +131,7 @@
 	&__bg
 		width: 90%
 		margin-right: 20%
-	&__pink-square
+	&__square
 		position: absolute
 		bottom: 0
 		left: 0
@@ -146,24 +139,25 @@
 		height: 80%
 		width: 50%
 		z-index: -10
-	.phrase
-		position: absolute
-		right: calc(20% - 150px)
-		top: calc(50% - 150px)
-		li
-			list-style: none
-			font-size: 65px
-			font-family: "Freight"
-			line-height: 1
-			display: flex
-			justify-content: center
-			align-items: center
-			span
-				display: block
-				width: 60px
-				height: 2px
-				background: #333
-				margin-right: 15px
+
+.phrase
+	position: absolute
+	right: calc(20% - 150px)
+	top: calc(50% - 150px)
+	li
+		list-style: none
+		font-size: 65px
+		font-family: "Freight"
+		line-height: 1
+		display: flex
+		justify-content: center
+		align-items: center
+		span
+			display: block
+			width: 60px
+			height: 2px
+			background: #333
+			margin-right: 15px
 
 // Slider
 
@@ -177,7 +171,6 @@
 		display: flex
 		justify-content: center
 		align-items: center
-
 		&_inner
 			width: 70%
 			height: 70%
@@ -185,27 +178,28 @@
 			flex-direction: column
 			align-items: center
 			justify-content: space-between
-	.owl-stage-outer
-		width: 100%
-
 	&__right
 		width: 50%
+
+.owl-stage-outer
+	width: 100%
+
 
 .right-slider
 	width: 100%
 	height: 100%
-	position: relative
 	&__image
 		height: 100vh
 		transition: 1s
 		&_1
-			background: url(..//img/carousel/carousel-image-right-1.jpg) center / cover
+			background: url(..//img/home/carousel/carousel-image-right-1.jpg) center / cover
 		&_2
-			background: url(..//img/carousel/carousel-image-right-2.jpg) top / cover
+			background: url(..//img/home/carousel/carousel-image-right-2.jpg) top / cover
 		&_3
-			background: url(..//img/carousel/carousel-image-right-3.jpg) top / cover
+			background: url(..//img/home/carousel/carousel-image-right-3.jpg) top / cover
 		&_4
-			background: url(..//img/carousel/carousel-image-right-4.jpg) top / cover
+			background: url(..//img/home/carousel/carousel-image-right-4.jpg) top / cover
+
 .slider-counter
 	display: flex
 	justify-content: space-between
@@ -219,7 +213,10 @@
 	display: flex
 	justify-content: space-between
 	width: 100%
-
+	.prev-btn
+		&::after
+			position: absolute
+			right: 0
 	button
 		text-transform: uppercase
 		background: none
@@ -238,10 +235,5 @@
 			height: 1px
 			background: #fff
 			transition: width .4s
-
 		&:hover::after
 			width: 100%
-	.prev-btn
-		&::after
-			position: absolute
-			right: 0
