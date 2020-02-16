@@ -220,7 +220,9 @@ $(window).resize(function(){
 	}else{
 		$('.menu').css({'left' : '45px', 'transition' : '0s'})}
 
-	$("body").height($("#content").height())
+	setTimeout(function(){
+		$("body").height($("#content").height())
+	}, 200);
 	$(".promo-second__image").width($(".promo-first__image").width())
 	if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
 

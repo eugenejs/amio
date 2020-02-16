@@ -4,10 +4,10 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "jquery": "latest",
     "@fortawesome/fontawesome-free": "latest",
     "animate.css": "latest",
     "hamburgers": "latest",
+    "jquery": "latest",
     "owl.carousel": "latest",
     "wowjs": "latest"
   },
@@ -19,6 +19,7 @@
     "gulp-cssnano": "^2.1.3",
     "gulp-imagemin": "^6.2.0",
     "gulp-npm-dist": "^1.0.3",
+    "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "latest",
