@@ -1,0 +1,20 @@
+.hamburger
+	display: none
+	position: fixed
+	z-index: 100
+	top: 35px
+	left: 10px
+	&_white
+		.hamburger-inner
+			background-color: #fff
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	width: 35px
+	height: 2px
+	background-color: $accent
+
+.hamburger-inner:after, .hamburger-inner:before
+	background-color: inherit
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+	background-color: #fff

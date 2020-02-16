@@ -47,7 +47,7 @@ const pngquant = require('imagemin-pngquant')
 
 
   gulp.task('watch', function() {
-      gulp.watch('app/sass/*.sass', gulp.parallel('sass'));
+      gulp.watch('app/sass/**/*.sass', gulp.parallel('sass'));
       gulp.watch('app/*.html').on('change', browserSync.reload);
       gulp.watch('app/js/*.js').on('change', browserSync.reload);
   });

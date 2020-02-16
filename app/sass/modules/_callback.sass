@@ -1,0 +1,50 @@
+.callback
+	background: #fff
+	padding: 300px 20px
+	text-align: center
+	position: relative
+	&__form
+		width: 300px
+		font-size: 12px
+		padding: 25px 20px
+		border: 1px solid #E5E5E5
+		outline: none
+		&::placeholder
+			color: #171B1A
+	h3
+		margin: 0 auto
+		font-weight: 300
+		max-width: 700px
+		margin-bottom: 40px
+
+.form
+	display: flex
+	justify-content: center
+	button
+		text-transform: uppercase
+		padding: 0 25px
+		background: #fff
+		border: 1px solid #E5E5E5
+		color: #171B1A
+		outline: none
+		cursor: pointer
+
+.success
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	display: none
+	justify-content: center
+	align-items: center
+	span
+		text-transform: uppercase
+		color: #222
+		font-size: 20px
+	& ~ *
+		transition: all .5s ease
+	&.active
+		& ~ *
+			opacity: .5
+			filter: blur(10px)

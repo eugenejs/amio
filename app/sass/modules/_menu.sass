@@ -1,0 +1,24 @@
+.menu
+	position: fixed
+	top: 25px
+	left: 45px
+	z-index: 100
+	transform-origin: bottom left
+	transform: rotate(90deg)
+	user-select: none
+	ul
+		display: flex
+		flex-direction: row-reverse
+	li
+		transform: rotate(180deg)
+		&:not(:first-child)
+			margin-right: 15px
+	a
+		color: #222
+		font-size: 10px
+		letter-spacing: 2px
+		text-transform: uppercase
+	&_white
+		a
+			color: #fff
+			transition: .4s

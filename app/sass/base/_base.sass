@@ -1,0 +1,102 @@
+body
+	position: relative
+	font-size: 16px
+	font-weight: 400
+	line-height: 1.75
+	min-width: 320px
+	margin: 0
+	+font-text
+
+input, button
+	font-family: inherit
+	outline: none
+
+button
+	cursor: pointer
+
+h1,h2,h3,h4,h5,h6
+	margin: 0
+	+font-m
+	line-height: 1
+
+h1,h3
+	font-size: 50px
+
+h2
+	font-size: 40px
+	font-weight: 400
+	line-height: 1.5
+
+h4
+	font-size: 10px
+	font-family: 'Plain'
+	opacity: .1
+	text-transform: uppercase
+	margin-bottom: 25px
+	letter-spacing: 2px
+ul
+	padding: 0
+	margin: 0
+li
+	list-style: none
+a
+	text-decoration: none
+
+.hidden
+	opacity: 0
+	visibility: hidden
+	transition: .5s
+
+#content
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+
+.fill
+	&-black
+		fill: $accent
+		transition: .3s
+	&-white
+		fill: #ffffff
+		transition: .3s
+
+.btn
+	font-size: 10px
+	text-transform: uppercase
+	font-family: 'Plain'
+	font-weight: 500
+	letter-spacing: 2px
+	background: #fff
+	padding: 20px 40px
+	border: 1px solid #000
+	&_dark
+		background: $accent
+		color: #fff
+
+.section-text
+	font-size: 14px
+	text-align: justify
+	border-top: 1px solid black
+	padding-top: 25px
+	width: 33%
+	&_promo-first
+		position: absolute
+		bottom: 0
+		right: 0
+	&_promo-second
+		width: 33%
+
+.logo-letter
+	z-index: -2
+	width: 40%
+	&_black
+		position: absolute
+		top: 0
+		left: 0
+	&_second
+		width: 60%
+		margin-top: 100px
+		&-wrapper
+			width: 67%
+			text-align: center
