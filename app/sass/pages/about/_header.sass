@@ -1,0 +1,38 @@
+.about-header
+   height: 100vh
+   display: flex
+   &__item
+      width: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #ffffff
+      &:first-child
+         position: relative
+         background: $accent
+   &__text
+      position: absolute
+      left: 50%
+      font-size: 108px
+      line-height: 1
+      border-bottom: 1px solid #ffffff
+      +font-m
+   img
+      width: 45%
+
+@media (max-width: 768px)
+	.about-header
+		&__item
+			&:first-child
+				width: 100%
+			&:last-child
+				width: 0
+		&__text
+			left: auto
+		img
+			width: 70%
+
+@media (max-width: 568px)
+	.blog-header
+		&__img
+			background: url(..//img/blog/blog-bg.jpg) 60% top / cover

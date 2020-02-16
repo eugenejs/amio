@@ -1,0 +1,33 @@
+.press-header
+    height: 100vh
+    background: $accent
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    img
+        width: 25%
+    span
+        font-family: "Freight"
+        color: #fff
+        font-size: 120px
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        text-align: center
+        line-height: 100vh
+
+@media (max-width: 992px)
+	.press-header
+		img
+			width: 50%
+		span
+			font-size: 100px
+
+@media (max-width: 768px)
+	.press-header
+		img
+			width: 75%
+		span
+			font-size: 80px

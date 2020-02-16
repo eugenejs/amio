@@ -1,0 +1,30 @@
+.section-text
+	font-size: 14px
+	text-align: justify
+	border-top: 1px solid black
+	padding-top: 25px
+	width: 33%
+	&_promo-first
+		position: absolute
+		bottom: 0
+		right: 0
+	&_promo-second
+		width: 33%
+
+@media (max-width: 1200px)
+	.section-text
+		width: 33%
+
+@media (max-width: 992px)
+	.section-text
+		width: 50%
+
+@media (max-width: 768px)
+	.section-text
+		position: static
+		width: 100%
+		&_promo-first
+			padding-bottom: 25px
+		&_promo-second
+			margin: 0 auto
+			width: 100%

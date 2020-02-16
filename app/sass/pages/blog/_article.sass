@@ -1,5 +1,3 @@
-// Main
-
 .article
     &_header
         background: $accent
@@ -31,21 +29,15 @@
         &_dark
             color: #b9b9b9
 
-// Header
-
-.blog-header
-    position: relative
-    &__img
-        height: 100vh
-        background: url(..//img/blog/blog-bg.jpg) center top / cover
-
-// Welcome
-
-.blog-welcome
-    display: flex
-    justify-content: center
-    margin: 300px 0 150px
-    &__img
-        width: 50%
-        padding-top: 33.333%
-        background: url(..//img/blog/blog-welcome.jpg) center / cover
+@media (max-width: 768px)
+	.article
+		position: static
+		width: 100%
+		&_header
+			padding: 100px 13%
+			z-index: 2
+			margin: 0
+		&_welcome
+			margin: 0
+		&__btn
+			width: 100%

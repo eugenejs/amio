@@ -1,0 +1,149 @@
+.about-description
+   display: flex
+   flex-direction: column
+   position: relative
+   &__image
+      &_1
+         width: 60%
+         align-self: flex-end
+         position: relative
+         top: 200px
+         img
+            width: 100%
+      &_2
+         width: 50%
+         align-self: center
+         position: relative
+         z-index: -1
+   &__bottom
+      display: flex
+      justify-content: flex-end
+      width: 100%
+      position: relative
+      &_1
+         z-index: -1
+         width: 60%
+         position: absolute
+         left: 0
+         bottom: 50%
+         img
+            width: 100%
+      &_2
+         width: 50%
+         img
+            width: 100%
+            position: relative
+            top: 600px
+            margin: 600px 0 200px
+   &__logo-letter
+      position: absolute
+      bottom: -40%
+      width: 100%
+      svg
+         position: relative
+         width: 40%
+         margin-left: 45%
+   &__text
+      width: 50%
+      background: #171B1A
+      color: #FFF
+      padding: 300px 14%
+      box-sizing: border-box
+      line-height: 2
+      p
+         font-size: 13px
+         text-align: justify
+         margin: 0
+      &_2
+         align-self: flex-end
+         position: relative
+         margin-top: -300px
+
+@media (max-width: 1600px)
+	.about-description
+		&__bottom
+			&_2
+				img
+					margin: 350px 0 200px
+
+@media (max-width: 1200px)
+   .about-description
+         &__image
+            &_2
+               top: -100px
+         &__bottom
+            &_1
+               bottom: 60%
+            &_2
+               img
+                  margin: 100px 0 200px
+
+@media (max-width: 992px)
+	.about-description
+		&__image
+			&_2
+				top: -150px
+		&__bottom
+			&_1
+				bottom: 50%
+			&_2
+				img
+					margin: 0px 0 200px
+
+@media (max-width: 768px)
+	.about-description
+		&__image
+			&_1
+				width: 80%
+				height: 100vh
+				text-align: center
+				background: url(..//img/about/about-desc-1.jpg) 60% top / cover
+				top: 0
+				margin: 150px 0
+				display: flex
+				align-items: flex-end
+				justify-content: flex-end
+				img
+					display: none
+			&_2
+				top: 50px
+				width: 80%
+				margin: 50px 0
+		&__logo-letter
+			bottom: -30%
+			width: 75%
+			svg
+				width: 100%
+				margin-left: 35%
+		&__text
+			width: 100%
+			padding: 100px 15%
+			&_2
+				margin-top: 0
+		&__bottom
+			flex-direction: column
+			position: static
+			&_1
+				width: 120%
+				position: static
+				margin-top: 100px
+				overflow: hidden
+				margin-left: -30%
+			&_2
+				width: 150%
+				overflow: hidden
+				position: relative
+				left: 20%
+				margin-bottom: -100px
+				top: 600px
+				img
+					position: relative
+					right: 35%
+					top: 0
+					margin: 0
+
+@media (max-width: 568px)
+	.about-description
+		&__image
+			&_2
+				top: 0px

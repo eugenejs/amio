@@ -1,0 +1,45 @@
+.lookbook-header
+    height: 100vh
+    background: $accent
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    &__title
+        border-bottom: 1px solid #fff
+        color: #ffffff
+        position: absolute
+        width: 70%
+        top: 45%
+        left: 15%
+    &__download
+        position: absolute
+        top: 48%
+        right: 15%
+        +font-text
+        color: #ffffff
+        font-weight: 400
+        letter-spacing: 2px
+        font-size: 10px
+        text-transform: uppercase
+    img
+        width: 25%
+
+@media (max-width: 768px)
+	.lookbook-header
+		&__title
+			width: auto
+			margin: 0 auto
+			text-align: center
+			font-size: 80px
+			left: auto
+			line-height: 1
+			color: #000000
+			border-color: #000
+		&__download
+			bottom: 7%
+			top: auto
+			right: auto
+		img
+			width: auto
+			height: 70%

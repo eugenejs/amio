@@ -1,0 +1,56 @@
+.promo-first
+	padding: 220px 0
+	position: relative
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: center
+		max-width: 60%
+		height: 100%
+		margin: 0 auto
+		position: relative
+	&__image-wrapper
+		margin: 100px 0
+		width: 45%
+		overflow: hidden
+		img
+			width: 100%
+			position: relative
+			bottom: 40px
+	&__square
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 50%
+		height: 450px
+		background: $accent
+		z-index: -10
+
+@media (max-width: 1200px)
+	.promo-first
+		padding: 220px 0 120px
+		position: relative
+		&__inner
+			max-width: 70%
+		&__image-wrapper
+			margin: 50px 0
+		&__square
+			height: 300px
+
+@media (max-width: 768px)
+	.promo-first
+		padding: 30px 0
+		&__inner
+			display: block
+		&__image-wrapper
+			width: 90%
+			margin: 0 auto 150px
+			position: relative
+			top: 300px
+		&__bg
+			position: relative
+			height: 700px
+			width: 100%
+			background: url(..//img/home/promo-first-bg.png) no-repeat -200px bottom / auto 100%
+		&__square
+			display: none

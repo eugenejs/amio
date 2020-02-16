@@ -1,0 +1,64 @@
+.quote
+	display: flex
+	flex-direction: row-reverse
+	align-items: center
+	position: relative
+	margin-bottom: 250px
+	&__bg
+		width: 90%
+		margin-right: 20%
+	&__square
+		position: absolute
+		bottom: 0
+		left: 0
+		background: #F3F4F5
+		height: 80%
+		width: 50%
+		z-index: -10
+
+.phrase
+	position: absolute
+	right: calc(20% - 150px)
+	top: calc(50% - 150px)
+	li
+		list-style: none
+		font-size: 65px
+		font-family: "Freight"
+		line-height: 1
+		display: flex
+		justify-content: center
+		align-items: center
+		span
+			display: block
+			width: 60px
+			height: 2px
+			background: #333
+			margin-right: 15px
+
+@media (max-width: 1200px)
+	.quote
+		&__square
+			bottom: -150px
+
+@media (max-width: 992px)
+	.quote
+		margin-bottom: 200px
+		&__square
+			bottom: -250px
+
+@media (max-width: 768px)
+	.quote
+		justify-content: center
+		overflow: hidden
+		margin: 0
+		background: url(..//img/home/quote-bg.png) center / auto 100%
+		&__bg
+			display: none
+		&__square
+			height: 100%
+		.phrase
+			margin: 300px 0
+			position: static
+			li
+				font-size: 50px
+				span

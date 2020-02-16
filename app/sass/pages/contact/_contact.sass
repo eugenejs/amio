@@ -54,3 +54,22 @@
             background: url(..//img/contact/content-bg-3.jpg) center / cover
          &_4
             background: url(..//img/contact/content-bg-4.jpg) center / cover
+
+@media (max-width: 992px)
+	.contact
+		&-background
+			&__row
+				div
+					min-width: 66%
+					padding-top: 100%
+
+@media (max-width: 768px)
+	.contact
+		&-header
+			&__contacts
+				width: 90%
+			span,a
+				line-height: 1
+			span
+				display: block
+				margin-bottom: 5px
