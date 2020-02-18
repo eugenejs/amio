@@ -73,7 +73,6 @@ const pngquant = require('imagemin-pngquant')
 
       var csslibs = [
           'app/libs/animate.css/animate.min.css',
-          'app/libs/hamburgers/dist/hamburgers.min.css',
           'app/libs/owl.carousel/dist/assets/owl.carousel.min.css'
       ]
 

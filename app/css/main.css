@@ -93,22 +93,52 @@ a {
 .hamburger {
   display: none;
   position: fixed;
-  z-index: 100;
+  cursor: pointer;
   top: 35px;
-  left: 10px; }
-  .hamburger_white .hamburger-inner {
-    background-color: #fff; }
+  left: 10px;
+  z-index: 100; }
+  .hamburger_black span, .hamburger_black span:nth-child(2):after {
+    background-color: #222222; }
+  .hamburger span, .hamburger span:nth-child(2):after {
+    display: block;
+    background-color: #ffffff;
+    -webkit-transition: background-color 0.2s, top 0.2s, -webkit-transform 0.2s;
+    transition: background-color 0.2s, top 0.2s, -webkit-transform 0.2s;
+    transition: background-color 0.2s, transform 0.2s, top 0.2s;
+    transition: background-color 0.2s, transform 0.2s, top 0.2s, -webkit-transform 0.2s;
+    height: 2px;
+    width: 36px; }
+  .hamburger span {
+    position: relative;
+    top: 0; }
+  .hamburger span:not(:last-child) {
+    margin-bottom: 8px; }
+  .hamburger span:nth-child(2):after {
+    content: ''; }
 
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  width: 35px;
-  height: 2px;
-  background-color: #1E1E24; }
+.hamburger_black span, .hamburger_black span:nth-child(2):after {
+  background: #222222; }
 
-.hamburger-inner:after, .hamburger-inner:before {
-  background-color: inherit; }
+.hamburger-active span, .hamburger-active span:nth-child(2):after {
+  background: #ffffff; }
 
-.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
-  background-color: #fff; }
+.hamburger-active span:first-child {
+  top: 9px;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+.hamburger-active span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.hamburger-active span:nth-child(2):after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.hamburger-active span:last-child {
+  top: -9px;
+  -webkit-transform: scale(0);
+  transform: scale(0); }
 
 @media (max-width: 768px) {
   .hamburger {

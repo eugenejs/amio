@@ -1,23 +1,51 @@
+$ham-size: 36px
+$ham-height: 2px
+$ham-top: 35px
+$ham-left: 10px
+$ham-color: #ffffff
+$ham-active-color: #ffffff
+$transition-duration: .2s
+$ham-margin-bottom: 8px
+// styles
 .hamburger
 	display: none
 	position: fixed
+	cursor: pointer
+	top: $ham-top
+	left: $ham-left
 	z-index: 100
-	top: 35px
-	left: 10px
-	&_white
-		.hamburger-inner
-			background-color: #fff
-
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
-	width: 35px
-	height: 2px
-	background-color: $accent
-
-.hamburger-inner:after, .hamburger-inner:before
-	background-color: inherit
-
-.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
-	background-color: #fff
+	&_black
+		span, span:nth-child(2):after
+			background-color: #222222
+	span, span:nth-child(2):after
+		display: block
+		background-color: $ham-color
+		transition: background-color $transition-duration, transform $transition-duration, top $transition-duration
+		height: $ham-height
+		width: $ham-size
+	span
+		position: relative
+		top: 0
+	span:not(:last-child)
+			margin-bottom: $ham-margin-bottom
+	span:nth-child(2):after
+		content: ''
+.hamburger_black
+		span, span:nth-child(2):after
+			background: #222222
+.hamburger-active
+	span, span:nth-child(2):after
+		background: $ham-active-color
+	span:first-child
+		top: $ham-size/4
+		transform: scale(0)
+	span:nth-child(2)
+		transform: rotate(-45deg)
+	span:nth-child(2):after
+		transform: rotate(90deg)
+	span:last-child
+		top: -$ham-size/4
+		transform: scale(0)
 
 @media (max-width: 768px)
 	.hamburger

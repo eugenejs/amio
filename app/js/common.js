@@ -147,14 +147,14 @@ $( document ).ready(function() {
 
 		$( ".hamburger" ).click(function() {
 
-			$(".hamburger").toggleClass("is-active");
+			$(".hamburger").toggleClass("hamburger-active");
 			$(".hamburger_white .hamburger-inner").css({'background-color' : '#fff', 'transition' : '.4s'})
 			$(".logo_white").removeClass('fill-white')
 			$('.logo,.logo_white').removeClass('fill-black').toggleClass('fill-white')
 			$('.logo-wrapper').css({'visibility' : 'visible', 'opacity' : '1'})
 			$('.menu_white a').css({'color' : '#fff'})
 
-			if($('.hamburger').hasClass('is-active')){
+			if($('.hamburger').hasClass('hamburger-active')){
 				$('.menu').css({'left' : '0', 'transition' : 'left 1s'})
 				$('body').css({'overflow' : 'hidden'})
 				$('.logo_hidden').css({'opacity' : '1', "transition" : '.3s'})
@@ -166,7 +166,7 @@ $( document ).ready(function() {
 					$('.menu').css({'left' : '45px', 'transition' : '0s'})}
 			}
 
-			if($(window).scrollTop() > $(window).height() && !$('.hamburger').hasClass('is-active')){
+			if($(window).scrollTop() > $(window).height() && !$('.hamburger').hasClass('hamburger-active')){
 				$('.logo_white').removeClass('fill-white').addClass('fill-black')
 				$(".hamburger_white .hamburger-inner").css({'background-color' : '#222', 'transition' : '.4s'})
 				$('.menu_white a').css({'color' : '#222'})
@@ -187,7 +187,7 @@ $( document ).ready(function() {
 	var scrollPos = 0
 	$(window).scroll(function(){
 
-		if($('.preloader').hasClass('hidden') && !$('.hamburger').hasClass('is-active')){
+		if($('.preloader').hasClass('hidden') && !$('.hamburger').hasClass('hamburger-active')){
 
 			var st = $(this).scrollTop();
 
@@ -199,11 +199,11 @@ $( document ).ready(function() {
 
 			if(st > $(window).height()){
 				$('.logo_white').removeClass('fill-white').addClass('fill-black')
-				$(".hamburger_white .hamburger-inner").css({'background-color' : '#222', 'transition' : '.4s'})
+				$('.hamburger_scroll-black').addClass('hamburger_black')
 				$('.menu_white a').css({'color' : '#222'})
 			}else{
 				$('.logo_white').removeClass('fill-black').addClass('fill-white')
-				$('.hamburger_white .hamburger-inner').css({'background-color' : '#fff', 'transition' : '.4s'})
+				$('.hamburger_scroll-black').removeClass('hamburger_black')
 				$('.menu_white a').css({'color' : '#fff'})
 			}
 
@@ -224,6 +224,6 @@ $(window).resize(function(){
 		$("body").height($("#content").height())
 	}, 200);
 	$(".promo-second__image").width($(".promo-first__image").width())
-	if($('.hamburger').hasClass('is-active')) $('.hamburger').click()
+	if($('.hamburger').hasClass('hamburger-active')) $('.hamburger').click()
 
 });

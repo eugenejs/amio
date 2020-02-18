@@ -6,7 +6,6 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "latest",
     "animate.css": "latest",
-    "hamburgers": "latest",
     "jquery": "latest",
     "owl.carousel": "latest",
     "wowjs": "latest"
